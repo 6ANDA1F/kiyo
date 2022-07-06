@@ -9,7 +9,17 @@ body {
   background-color: #FFFFFF;
 }
 
-h2 {
+h1 {
+  font-family: 'SuisseIntlMono-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 36px;
+  color: #000000;
+}
+
+h2, h3 {
   font-family: 'SuisseIntl-SemiBold';
   font-weight: 600;
   line-height: 24px;
@@ -25,4 +35,14 @@ p {
   line-height: 22px;
   color: #000000;
   margin-bottom: 22px;
+}
+
+h1:last-child, 
+h2:last-child, 
+h3:last-child,  
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+  margin-bottom: 0;
 }
