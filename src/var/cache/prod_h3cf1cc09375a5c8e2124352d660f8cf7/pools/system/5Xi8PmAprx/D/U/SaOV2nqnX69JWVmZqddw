@@ -1,0 +1,300 @@
+<?php //Shopware%255CCore%255CContent%255CLandingPage%255CSalesChannel%255CLandingPageRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/landing-page/{landingPageId}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Content',
+                ],
+            ],
+            'summary' => [
+                1 => 'Fetch a landing page with the resolved CMS page',
+            ],
+            'description' => [
+                1 => 'Loads a landing page by its identifier and resolves the CMS page.'."\n"
+                    ."\n"
+                    .'**Important notice**'."\n"
+                    ."\n"
+                    .'The criteria passed with this route also affects the listing, if there is one within the cms page.',
+                5 => 'Identifier of the landing page.',
+                15 => 'The product listing criteria only has an effect, if the landing page contains a product listing.',
+                19 => 'Resolves only the given slot identifiers. The identifiers have to be seperated by a `|` character.',
+                26 => 'The loaded landing page with cms page',
+            ],
+            'operationId' => [
+                1 => 'readLandingPage',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[5],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[11],
+            ],
+            'responses' => [
+                1 => [
+                    $o[26],
+                    $o[32],
+                ],
+            ],
+            '_context' => [
+                1 => $o[35],
+                $o[3],
+                5 => $o[9],
+                $o[7],
+                11 => $o[12],
+                14 => $o[24],
+                $o[16],
+                18 => $o[22],
+                $o[20],
+                26 => $o[27],
+                29 => $o[30],
+                32 => $o[33],
+            ],
+            'name' => [
+                2 => 'Api-Basic-Parameters',
+                5 => 'landingPageId',
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                9 => $o[10],
+                12 => $o[13],
+                16 => $o[17],
+                20 => $o[21],
+                22 => $o[23],
+                24 => $o[25],
+                27 => $o[28],
+                30 => $o[31],
+                33 => $o[34],
+                35 => $o[36],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                20 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                22 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                24 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                27 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                30 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                33 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                35 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                9 => 1009,
+                12 => 1009,
+                16 => 1009,
+                20 => 1009,
+                22 => 1009,
+                24 => 1009,
+                27 => 1009,
+                30 => 1009,
+                33 => 1009,
+                35 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                16 => 'Annotation',
+                20 => 'Annotation',
+                22 => 'Annotation',
+                24 => 'Annotation',
+                27 => 'Annotation',
+                30 => 'Annotation',
+                33 => 'Annotation',
+                35 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                16 => 'DocParser',
+                20 => 'DocParser',
+                22 => 'DocParser',
+                24 => 'DocParser',
+                27 => 'DocParser',
+                30 => 'DocParser',
+                33 => 'DocParser',
+                35 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                20 => 'Shopware\\Core\\Framework\\Compatibility',
+                22 => 'Shopware\\Core\\Framework\\Compatibility',
+                24 => 'Shopware\\Core\\Framework\\Compatibility',
+                27 => 'Shopware\\Core\\Framework\\Compatibility',
+                30 => 'Shopware\\Core\\Framework\\Compatibility',
+                33 => 'Shopware\\Core\\Framework\\Compatibility',
+                35 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[5],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                20 => [
+                    $o[19],
+                ],
+                22 => [
+                    $o[18],
+                ],
+                24 => [
+                    $o[14],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                33 => [
+                    $o[32],
+                ],
+                35 => [
+                    $o[1],
+                ],
+            ],
+            'in' => [
+                5 => 'path',
+            ],
+            'required' => [
+                5 => true,
+            ],
+            'schema' => [
+                5 => $o[6],
+            ],
+            'type' => [
+                6 => 'string',
+                14 => 'object',
+                18 => 'object',
+                'string',
+            ],
+            '_unmerged' => [
+                11 => [
+                    $o[14],
+                ],
+                26 => [
+                    $o[29],
+                ],
+            ],
+            'allOf' => [
+                14 => [
+                    $o[15],
+                    $o[18],
+                ],
+            ],
+            'ref' => [
+                15 => '#/components/schemas/ProductListingCriteria',
+                29 => '#/components/schemas/LandingPage',
+                32 => '#/components/responses/404',
+            ],
+            'properties' => [
+                18 => [
+                    $o[19],
+                ],
+            ],
+            'property' => [
+                19 => 'slots',
+            ],
+            'response' => [
+                26 => '200',
+                32 => '404',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                37 => '/store-api/landing-page/{landingPageId}',
+            ],
+            'name' => [
+                37 => 'store-api.landing-page.detail',
+            ],
+            'methods' => [
+                37 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[37],
+    ],
+    []
+); }];

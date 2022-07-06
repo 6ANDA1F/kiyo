@@ -1,0 +1,162 @@
+<?php //Shopware%255CCore%255CCheckout%255CCart%255CSalesChannel%255CCartItemUpdateRoute%2523change
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Patch')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/checkout/cart/line-item',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Cart',
+                ],
+            ],
+            'summary' => [
+                1 => 'Update items in the cart',
+            ],
+            'description' => [
+                1 => 'This route updates items in the cart. A typical example is updating the quantity of an item.'."\n"
+                    ."\n"
+                    .'Example: [Working with the cart - Guide](https://developer.shopware.com/docs/guides/integrations-api/store-api-guide/work-with-the-cart#updating-items-in-the-cart)',
+                8 => 'The updated cart.',
+            ],
+            'operationId' => [
+                1 => 'updateLineItem',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[8],
+                ],
+            ],
+            '_context' => [
+                1 => $o[14],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[11],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                14 => $o[15],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                14 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                9 => 1009,
+                12 => 1009,
+                14 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                14 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[1],
+                ],
+            ],
+            'ref' => [
+                5 => '#/components/schemas/CartItems',
+                11 => '#/components/schemas/Cart',
+            ],
+            'response' => [
+                8 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                16 => '/store-api/checkout/cart/line-item',
+            ],
+            'name' => [
+                16 => 'store-api.checkout.cart.update-lineitem',
+            ],
+            'methods' => [
+                16 => [
+                    'PATCH',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[16],
+    ],
+    []
+); }];

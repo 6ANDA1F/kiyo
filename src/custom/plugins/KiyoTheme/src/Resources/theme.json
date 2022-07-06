@@ -1,0 +1,29 @@
+{
+  "name": "KiyoTheme",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@KiyoTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@StorefrontBootstrap",
+    "app/storefront/src/scss/fonts.scss",
+    "app/storefront/src/scss/buttons.scss",
+    "app/storefront/src/scss/text-formats.scss",
+    "app/storefront/src/scss/base.scss",
+    "app/storefront/src/scss/header.scss",
+    "app/storefront/src/scss/menu.scss",
+    "app/storefront/src/scss/cms-block-text-on-image.scss",
+    "app/storefront/src/scss/block-product-three-collumn.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/kiyo-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ]
+}

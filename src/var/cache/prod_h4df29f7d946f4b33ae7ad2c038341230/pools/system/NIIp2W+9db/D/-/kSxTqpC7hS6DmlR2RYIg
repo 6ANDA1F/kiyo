@@ -1,0 +1,190 @@
+<?php //Shopware%255CCore%255CContent%255CProductExport%255CSalesChannel%255CExportController%2523index
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.2.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/product-export/{accessKey}/{fileName}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Product',
+                ],
+            ],
+            'summary' => [
+                1 => 'Export product export',
+            ],
+            'operationId' => [
+                1 => 'readProductExport',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                    $o[8],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[17],
+                $o[6],
+                $o[4],
+                8 => $o[12],
+                $o[10],
+                14 => $o[15],
+            ],
+            'name' => [
+                2 => 'accessKey',
+                8 => 'fileName',
+            ],
+            'in' => [
+                2 => 'path',
+                8 => 'path',
+            ],
+            'description' => [
+                2 => 'Access Key',
+                8 => 'File Name',
+                14 => '',
+            ],
+            'required' => [
+                2 => true,
+                8 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+                8 => $o[9],
+            ],
+            'type' => [
+                3 => 'string',
+                9 => 'string',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                10 => $o[11],
+                12 => $o[13],
+                15 => $o[16],
+                17 => $o[18],
+            ],
+            'filename' => [
+                4 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                10 => 1009,
+                12 => 1009,
+                15 => 1009,
+                17 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[8],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[1],
+                ],
+            ],
+            'response' => [
+                14 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                19 => '/store-api/product-export/{accessKey}/{fileName}',
+            ],
+            'name' => [
+                19 => 'store-api.product.export',
+            ],
+            'defaults' => [
+                19 => [
+                    'auth_required' => false,
+                ],
+            ],
+            'methods' => [
+                19 => [
+                    'GET',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[19],
+    ],
+    []
+); }];

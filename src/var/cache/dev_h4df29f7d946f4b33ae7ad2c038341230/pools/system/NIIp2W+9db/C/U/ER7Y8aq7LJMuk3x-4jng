@@ -1,0 +1,210 @@
+<?php //Shopware%255CCore%255CFramework%255CMigration%255CApi%255CMigrationController%2523migrate
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/database/migrate',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Database Migrations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Execute migrations',
+            ],
+            'description' => [
+                1 => 'Executes all migrations for the provided bundle name.',
+                6 => 'Name of the bundle whose migrations are to be synced.',
+                9 => 'Limit the amout of migrations to be executed. By default, there is no limit.',
+                12 => 'A timestamp that controls until which `creation_date` migrations are executed.'."\n"
+                    .'    By default, all migrations are executed.',
+                17 => 'Returns a no content response indicating a successful sync.',
+            ],
+            'operationId' => [
+                1 => 'migrate',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[17],
+                ],
+            ],
+            '_context' => [
+                1 => $o[20],
+                $o[3],
+                5 => $o[15],
+                $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                17 => $o[18],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                10 => $o[11],
+                13 => $o[14],
+                15 => $o[16],
+                18 => $o[19],
+                20 => $o[21],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                20 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                10 => 1009,
+                13 => 1009,
+                15 => 1009,
+                18 => 1009,
+                20 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                10 => 'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+                18 => 'Annotation',
+                20 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                10 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+                18 => 'DocParser',
+                20 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                20 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[5],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                20 => [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                    $o[9],
+                    $o[12],
+                ],
+            ],
+            'property' => [
+                6 => 'identifier',
+                9 => 'limit',
+                12 => 'until',
+            ],
+            'type' => [
+                6 => 'string',
+                9 => 'integer',
+                12 => 'integer',
+            ],
+            'default' => [
+                6 => 'core',
+            ],
+            'response' => [
+                17 => '204',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                22 => '/api/_action/database/migrate',
+            ],
+            'name' => [
+                22 => 'api.action.database.migrate',
+            ],
+            'defaults' => [
+                22 => [
+                    '_acl' => [
+                        'system:core:update',
+                    ],
+                ],
+            ],
+            'methods' => [
+                22 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[22],
+    ],
+    []
+); }];

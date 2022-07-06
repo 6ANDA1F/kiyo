@@ -1,0 +1,41 @@
+{
+    "script": [
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/vendor\/shopware\/storefront\/Resources\/app\/storefront\/src\/main.js",
+            "resolveMapping": [],
+            "extensions": []
+        },
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/custom\/plugins\/KiyoTheme\/src\/Resources\/app\/storefront\/src\/main.js",
+            "resolveMapping": [],
+            "extensions": []
+        }
+    ],
+    "style": [
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/custom\/plugins\/KiyoTheme\/src\/Resources\/app\/storefront\/src\/scss\/overrides.scss",
+            "resolveMapping": [],
+            "extensions": []
+        },
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/vendor\/shopware\/storefront\/Resources\/app\/storefront\/src\/scss\/base.scss",
+            "resolveMapping": {
+                "vendor": "\/Users\/owenroberts\/KIYO\/Site\/src\/vendor\/shopware\/storefront\/Resources\/app\/storefront\/vendor"
+            },
+            "extensions": []
+        },
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/vendor\/shopware\/storefront\/Resources\/app\/storefront\/src\/scss\/skin\/shopware\/_base.scss",
+            "resolveMapping": {
+                "vendor": "\/Users\/owenroberts\/KIYO\/Site\/src\/vendor\/shopware\/storefront\/Resources\/app\/storefront\/vendor"
+            },
+            "extensions": []
+        },
+        {
+            "filepath": "\/Users\/owenroberts\/KIYO\/Site\/src\/custom\/plugins\/KiyoTheme\/src\/Resources\/app\/storefront\/src\/scss\/base.scss",
+            "resolveMapping": [],
+            "extensions": []
+        }
+    ],
+    "basePath": "custom\/plugins\/KiyoTheme\/src\/Resources"
+}

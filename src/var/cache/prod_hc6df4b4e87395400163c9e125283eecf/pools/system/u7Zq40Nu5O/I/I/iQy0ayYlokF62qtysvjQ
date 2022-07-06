@@ -1,0 +1,150 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CLogoutRoute%2523logout
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/account/logout',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Login & Registration',
+                ],
+            ],
+            'summary' => [
+                1 => 'Log out a customer',
+            ],
+            'description' => [
+                1 => 'Logs out a customer.',
+                'A successful logout returns a context token for the anonymous user. Use that as your `sw-context-token` header for subsequent requests.',
+                8 => 'If the user is not logged in, a 403 error is returned.',
+            ],
+            'operationId' => [
+                1 => 'logoutCustomer',
+            ],
+            'responses' => [
+                1 => [
+                    $o[2],
+                    $o[8],
+                ],
+            ],
+            '_context' => [
+                1 => $o[11],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+            ],
+            'response' => [
+                2 => '200',
+                8 => '403',
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                11 => $o[12],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                9 => 1009,
+                11 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[1],
+                ],
+            ],
+            'ref' => [
+                5 => '#/components/schemas/ContextTokenResponse',
+                8 => '#/components/responses/403',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                13 => '/store-api/account/logout',
+            ],
+            'name' => [
+                13 => 'store-api.account.logout',
+            ],
+            'defaults' => [
+                13 => [
+                    '_loginRequired' => true,
+                    '_loginRequiredAllowGuest' => true,
+                ],
+            ],
+            'methods' => [
+                13 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[13],
+    ],
+    []
+); }];

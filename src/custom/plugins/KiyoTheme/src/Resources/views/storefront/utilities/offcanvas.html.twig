@@ -1,0 +1,47 @@
+{#
+@deprecated tag:v6.5.0 - Announcement:
+Bootstrap v5 comes with its own OffCanvas component.
+This template will be adjusted to use Bootstraps OffCanvas markup.
+
+@see https://getbootstrap.com/docs/5.1/components/offcanvas
+#}
+
+{% set isAjaxOffcanvas = false %}
+
+{% block utilities_offcanvas_meta %}
+    {# only including this for robots to have appropriate meta tags and when offcanvas is loaded via ajax #}
+    {% if not app.request.xmlHttpRequest and isAjaxOffcanvas %}
+        {% sw_include '@Storefront/storefront/layout/meta.html.twig' %}
+    {% endif %}
+{% endblock %}
+
+{% block utilities_offcanvas %}
+    <div class="header container">
+        <div class="row align-items-center header-row">
+            <div class="col-12 order-1 col-sm-auto order-sm-2 header-actions-col">
+                <div class="row no-gutters">
+                    <div class="col d-sm-none">
+                        {% block utilities_offcanvas_close %}
+                            <button class="btn offcanvas-close js-offcanvas-close sticky-top">
+                                {% block utilities_offcanvas_close_icon %}
+                                    {% sw_icon 'x' style { 'size': 'sm' } %}
+                                {% endblock %}
+                            </button>
+                        {% endblock %}
+                    </div>
+
+                    <div class="col-auto d-sm-none align-self-center">
+                        {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block utilities_offcanvas_content_container %}
+        <div class="offcanvas-content-container">
+            {% block utilities_offcanvas_content %}{% endblock %}
+        </div>
+    {% endblock %}
+{% endblock %}
+

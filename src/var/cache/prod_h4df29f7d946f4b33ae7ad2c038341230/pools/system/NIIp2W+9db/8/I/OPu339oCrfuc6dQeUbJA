@@ -1,0 +1,313 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CUpsertAddressRoute%2523upsert
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Patch'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Patch')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\RequestBody'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        clone $p['Symfony\\Component\\Routing\\Annotation\\Route'],
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.2.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/account/address',
+                16 => '/account/address/{addressId}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Address',
+                ],
+                16 => [
+                    'Store API',
+                    'Address',
+                ],
+            ],
+            'summary' => [
+                1 => 'Create a new address for a customer',
+                16 => 'Modify an address of a customer',
+            ],
+            'description' => [
+                1 => 'Creates a new address for a customer.',
+                8 => '',
+                16 => 'Modifies an existing address of a customer.',
+                'Address ID',
+                29 => '',
+            ],
+            'operationId' => [
+                1 => 'createCustomerAddress',
+                16 => 'updateCustomerAddress',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+                16 => $o[23],
+            ],
+            'responses' => [
+                1 => [
+                    $o[8],
+                ],
+                16 => [
+                    $o[29],
+                ],
+            ],
+            '_context' => [
+                1 => $o[14],
+                $o[3],
+                5 => $o[6],
+                8 => $o[9],
+                11 => $o[12],
+                16 => $o[35],
+                $o[21],
+                $o[19],
+                23 => $o[24],
+                26 => $o[27],
+                29 => $o[30],
+                32 => $o[33],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+                8 => [
+                    $o[11],
+                ],
+                23 => [
+                    $o[26],
+                ],
+                29 => [
+                    $o[32],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                6 => $o[7],
+                9 => $o[10],
+                12 => $o[13],
+                14 => $o[15],
+                19 => $o[20],
+                21 => $o[22],
+                24 => $o[25],
+                27 => $o[28],
+                30 => $o[31],
+                33 => $o[34],
+                35 => $o[36],
+            ],
+            'filename' => [
+                3 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                14 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                24 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                27 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                30 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                33 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                35 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                6 => 1009,
+                9 => 1009,
+                12 => 1009,
+                14 => 1009,
+                19 => 1009,
+                21 => 1009,
+                24 => 1009,
+                27 => 1009,
+                30 => 1009,
+                33 => 1009,
+                35 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+                24 => 'Annotation',
+                27 => 'Annotation',
+                30 => 'Annotation',
+                33 => 'Annotation',
+                35 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+                24 => 'DocParser',
+                27 => 'DocParser',
+                30 => 'DocParser',
+                33 => 'DocParser',
+                35 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                14 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+                24 => 'Shopware\\Core\\Framework\\Compatibility',
+                27 => 'Shopware\\Core\\Framework\\Compatibility',
+                30 => 'Shopware\\Core\\Framework\\Compatibility',
+                33 => 'Shopware\\Core\\Framework\\Compatibility',
+                35 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                6 => [
+                    $o[5],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[1],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                21 => [
+                    $o[17],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                33 => [
+                    $o[32],
+                ],
+                35 => [
+                    $o[16],
+                ],
+            ],
+            'ref' => [
+                5 => '#/components/schemas/CustomerAddress',
+                11 => '#/components/schemas/CustomerAddress',
+                26 => '#/components/schemas/CustomerAddress',
+                32 => '#/components/schemas/CustomerAddress',
+            ],
+            'response' => [
+                8 => '200',
+                29 => '200',
+            ],
+            'parameters' => [
+                16 => [
+                    $o[17],
+                ],
+            ],
+            'name' => [
+                17 => 'addressId',
+            ],
+            'in' => [
+                17 => 'path',
+            ],
+            'required' => [
+                17 => true,
+            ],
+            'schema' => [
+                17 => $o[18],
+            ],
+            'type' => [
+                18 => 'string',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                37 => '/store-api/account/address',
+                '/store-api/account/address/{addressId}',
+            ],
+            'name' => [
+                37 => 'store-api.account.address.create',
+                'store-api.account.address.update',
+            ],
+            'defaults' => [
+                37 => [
+                    'addressId' => null,
+                    '_loginRequired' => true,
+                    '_loginRequiredAllowGuest' => true,
+                ],
+                [
+                    '_loginRequired' => true,
+                    '_loginRequiredAllowGuest' => true,
+                ],
+            ],
+            'methods' => [
+                37 => [
+                    'POST',
+                ],
+                [
+                    'PATCH',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[16],
+        $o[37],
+        $o[38],
+    ],
+    []
+); }];

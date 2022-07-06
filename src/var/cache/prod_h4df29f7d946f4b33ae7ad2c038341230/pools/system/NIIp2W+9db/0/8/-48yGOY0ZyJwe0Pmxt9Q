@@ -1,0 +1,302 @@
+<?php //Shopware%255CCore%255CFramework%255CApi%255CController%255CIndexingController%2523iterate
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Header'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Header')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/indexing/{indexer}',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'System Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Iterate an indexer',
+            ],
+            'description' => [
+                1 => 'Starts a defined indexer with an offset.'."\n"
+                    ."\n"
+                    .'for the next request. `finish: true` in the response indicates that the indexer is finished',
+                'Name of the indexer to iterate.',
+                12 => 'The offset for the iteration.',
+                17 => 'Returns information about the iteration.',
+                21 => 'Indicates if the indexing process finished.',
+                24 => 'Offset to be used for the next iteration.',
+                31 => 'Contains indexer names that should be skipped comma seperated',
+            ],
+            'operationId' => [
+                1 => 'iterate',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[8],
+            ],
+            'responses' => [
+                1 => [
+                    $o[17],
+                ],
+            ],
+            '_context' => [
+                1 => $o[29],
+                $o[6],
+                $o[4],
+                8 => $o[9],
+                11 => $o[15],
+                $o[13],
+                17 => $o[18],
+                20 => $o[27],
+                $o[22],
+                24 => $o[25],
+                31 => $o[35],
+                $o[33],
+            ],
+            '_unmerged' => [
+                1 => [
+                    $o[31],
+                ],
+                8 => [
+                    $o[11],
+                ],
+                17 => [
+                    $o[20],
+                ],
+            ],
+            'name' => [
+                2 => 'indexer',
+            ],
+            'in' => [
+                2 => 'path',
+            ],
+            'required' => [
+                2 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+                31 => $o[32],
+            ],
+            'type' => [
+                3 => 'string',
+                12 => 'integer',
+                21 => 'boolean',
+                24 => 'integer',
+                32 => 'string',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+                13 => $o[14],
+                15 => $o[16],
+                18 => $o[19],
+                22 => $o[23],
+                25 => $o[26],
+                27 => $o[28],
+                29 => $o[30],
+                33 => $o[34],
+                35 => $o[36],
+            ],
+            'filename' => [
+                4 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                22 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                25 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                27 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                29 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                33 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                35 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                9 => 1009,
+                13 => 1009,
+                15 => 1009,
+                18 => 1009,
+                22 => 1009,
+                25 => 1009,
+                27 => 1009,
+                29 => 1009,
+                33 => 1009,
+                35 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                13 => 'Annotation',
+                15 => 'Annotation',
+                18 => 'Annotation',
+                22 => 'Annotation',
+                25 => 'Annotation',
+                27 => 'Annotation',
+                29 => 'Annotation',
+                33 => 'Annotation',
+                35 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                13 => 'DocParser',
+                15 => 'DocParser',
+                18 => 'DocParser',
+                22 => 'DocParser',
+                25 => 'DocParser',
+                27 => 'DocParser',
+                29 => 'DocParser',
+                33 => 'DocParser',
+                35 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                22 => 'Shopware\\Core\\Framework\\Compatibility',
+                25 => 'Shopware\\Core\\Framework\\Compatibility',
+                27 => 'Shopware\\Core\\Framework\\Compatibility',
+                29 => 'Shopware\\Core\\Framework\\Compatibility',
+                33 => 'Shopware\\Core\\Framework\\Compatibility',
+                35 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                15 => [
+                    $o[11],
+                ],
+                18 => [
+                    $o[17],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                27 => [
+                    $o[20],
+                ],
+                29 => [
+                    $o[1],
+                ],
+                33 => [
+                    $o[32],
+                ],
+                35 => [
+                    $o[31],
+                ],
+            ],
+            'properties' => [
+                11 => [
+                    $o[12],
+                ],
+                20 => [
+                    $o[21],
+                    $o[24],
+                ],
+            ],
+            'property' => [
+                12 => 'offset',
+                21 => 'finish',
+                24 => 'offset',
+            ],
+            'response' => [
+                17 => '200',
+            ],
+            'header' => [
+                31 => 'indexing-skip',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                37 => '/api/_action/indexing/{indexer}',
+            ],
+            'name' => [
+                37 => 'api.action.indexing.iterate',
+            ],
+            'methods' => [
+                37 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[37],
+    ],
+    []
+); }];

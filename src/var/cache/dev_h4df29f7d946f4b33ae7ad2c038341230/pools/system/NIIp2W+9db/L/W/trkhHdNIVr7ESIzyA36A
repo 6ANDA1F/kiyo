@@ -1,0 +1,162 @@
+<?php //Shopware%255CCore%255CCheckout%255CCustomer%255CSalesChannel%255CCustomerRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'customer',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/account/customer',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Profile',
+                ],
+            ],
+            'summary' => [
+                2 => 'Get information about current customer',
+            ],
+            'description' => [
+                2 => 'Returns information about the current customer.',
+                6 => 'Returns the logged in customer, also for guest sessions. Check for the value of `guest` field to see whether the customer is a guest.',
+            ],
+            'operationId' => [
+                2 => 'readCustomer',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'responses' => [
+                2 => [
+                    $o[6],
+                ],
+            ],
+            '_context' => [
+                2 => $o[12],
+                $o[4],
+                6 => $o[7],
+                9 => $o[10],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+            ],
+            'logger' => [
+                4 => $o[5],
+                7 => $o[8],
+                10 => $o[11],
+                12 => $o[13],
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                7 => 1009,
+                10 => 1009,
+                12 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[2],
+                ],
+            ],
+            'response' => [
+                6 => '200',
+            ],
+            '_unmerged' => [
+                6 => [
+                    $o[9],
+                ],
+            ],
+            'ref' => [
+                9 => '#/components/schemas/Customer',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                14 => '/store-api/account/customer',
+            ],
+            'name' => [
+                14 => 'store-api.account.customer',
+            ],
+            'defaults' => [
+                14 => [
+                    '_loginRequired' => true,
+                    '_loginRequiredAllowGuest' => true,
+                ],
+            ],
+            'methods' => [
+                14 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[14],
+    ],
+    []
+); }];

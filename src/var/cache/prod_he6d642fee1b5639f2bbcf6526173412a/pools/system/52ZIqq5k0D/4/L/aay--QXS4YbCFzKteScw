@@ -1,0 +1,236 @@
+<?php //Shopware%255CCore%255CFramework%255CScript%255CApi%255CScriptStoreApiRoute%2523execute
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Get'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Get')),
+        clone $p['OpenApi\\Annotations\\Parameter'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.4.9.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/store-api/script/{hook}',
+                13 => '/store-api/script/{hook}',
+            ],
+            'tags' => [
+                1 => [
+                    'API',
+                    'Script',
+                    'Store API',
+                    'App',
+                ],
+                13 => [
+                    'API',
+                    'Script',
+                    'Store API',
+                    'App',
+                ],
+            ],
+            'summary' => [
+                1 => 'Access point for different api logics which are provided by apps over script hooks',
+                13 => 'Access point for different api logics which are provided by apps over script hooks',
+            ],
+            'operationId' => [
+                1 => 'postScriptStoreApiRoute',
+                13 => 'getScriptStoreApiRoute',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+                13 => [
+                    $o[14],
+                ],
+            ],
+            'responses' => [
+                1 => [
+                    $o[8],
+                ],
+                13 => [
+                    $o[20],
+                ],
+            ],
+            '_context' => [
+                1 => $o[11],
+                $o[6],
+                $o[4],
+                8 => $o[9],
+                13 => $o[23],
+                $o[18],
+                $o[16],
+                20 => $o[21],
+            ],
+            'name' => [
+                2 => 'hook',
+                14 => 'hook',
+            ],
+            'in' => [
+                2 => 'path',
+                14 => 'path',
+            ],
+            'description' => [
+                2 => 'Dynamic hook which used to build the hook name',
+                8 => 'Returns different structures of results based on the called script.',
+                14 => 'Dynamic hook which used to build the hook name',
+                20 => 'Returns different structures of results based on the called script.',
+            ],
+            'required' => [
+                2 => true,
+                14 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+                14 => $o[15],
+            ],
+            'type' => [
+                3 => 'string',
+                15 => 'string',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+                11 => $o[12],
+                16 => $o[17],
+                18 => $o[19],
+                21 => $o[22],
+                23 => $o[24],
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                18 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                23 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                9 => 1009,
+                11 => 1009,
+                16 => 1009,
+                18 => 1009,
+                21 => 1009,
+                23 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                11 => 'Annotation',
+                16 => 'Annotation',
+                18 => 'Annotation',
+                21 => 'Annotation',
+                23 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                11 => 'DocParser',
+                16 => 'DocParser',
+                18 => 'DocParser',
+                21 => 'DocParser',
+                23 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                18 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+                23 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                11 => [
+                    $o[1],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                18 => [
+                    $o[14],
+                ],
+                21 => [
+                    $o[20],
+                ],
+                23 => [
+                    $o[13],
+                ],
+            ],
+            'response' => [
+                8 => '200',
+                20 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                25 => '/store-api/script/{hook}',
+            ],
+            'name' => [
+                25 => 'store-api.script_endpoint',
+            ],
+            'requirements' => [
+                25 => [
+                    'hook' => '.+',
+                ],
+            ],
+            'methods' => [
+                25 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[13],
+        $o[25],
+    ],
+    []
+); }];

@@ -1,0 +1,195 @@
+<?php //Shopware%255CCore%255CCheckout%255COrder%255CSalesChannel%255CCancelOrderRoute%2523cancel
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/order/state/cancel',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Order',
+                ],
+            ],
+            'summary' => [
+                1 => 'Cancel an order',
+            ],
+            'description' => [
+                1 => 'Cancels an order. The order state will be set to \'cancelled\'.',
+                6 => 'The identifier of the order to be canceled.',
+                11 => 'Returns the state of the state machine'."\n"
+                    ."\n"
+                    .'    example: More information about the state machine can be found in the corresponding guide: [Using the state machine](https://developer.shopware.com/docs/guides/plugins/plugins/checkout/order/using-the-state-machine)',
+            ],
+            'operationId' => [
+                1 => 'cancelOrder',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[11],
+                ],
+            ],
+            '_context' => [
+                1 => $o[17],
+                $o[3],
+                5 => $o[9],
+                $o[7],
+                11 => $o[12],
+                14 => $o[15],
+            ],
+            'required' => [
+                2 => true,
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+                11 => [
+                    $o[14],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                9 => $o[10],
+                12 => $o[13],
+                15 => $o[16],
+                17 => $o[18],
+            ],
+            'filename' => [
+                3 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                9 => 1009,
+                12 => 1009,
+                15 => 1009,
+                17 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[5],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'property' => [
+                6 => 'orderId',
+            ],
+            'type' => [
+                6 => 'string',
+            ],
+            'response' => [
+                11 => '200',
+            ],
+            'ref' => [
+                14 => '#/components/schemas/StateMachineState',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                19 => '/store-api/order/state/cancel',
+            ],
+            'name' => [
+                19 => 'store-api.order.state.cancel',
+            ],
+            'defaults' => [
+                19 => [
+                    '_loginRequired' => true,
+                    '_loginRequiredAllowGuest' => true,
+                ],
+            ],
+            'methods' => [
+                19 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[19],
+    ],
+    []
+); }];

@@ -1,0 +1,172 @@
+<?php //Shopware%255CCore%255CFramework%255CApi%255CController%255CCacheController%2523index
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/index',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'System Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Run indexer',
+            ],
+            'description' => [
+                1 => 'Runs all registered indexer in the shop asynchronously.',
+                6 => 'Array of indexers/updaters to be skipped.',
+                11 => 'Returns a no content response indicating that the indexing progress startet.',
+            ],
+            'operationId' => [
+                1 => 'index',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[11],
+                ],
+            ],
+            '_context' => [
+                1 => $o[14],
+                $o[3],
+                5 => $o[9],
+                $o[7],
+                11 => $o[12],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                9 => $o[10],
+                12 => $o[13],
+                14 => $o[15],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                14 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                9 => 1009,
+                12 => 1009,
+                14 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                9 => 'Annotation',
+                12 => 'Annotation',
+                14 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                9 => 'DocParser',
+                12 => 'DocParser',
+                14 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                14 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                9 => [
+                    $o[5],
+                ],
+                12 => [
+                    $o[11],
+                ],
+                14 => [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                ],
+            ],
+            'property' => [
+                6 => 'skip',
+            ],
+            'type' => [
+                6 => 'array',
+            ],
+            'response' => [
+                11 => '204',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                16 => '/api/_action/index',
+            ],
+            'name' => [
+                16 => 'api.action.cache.index',
+            ],
+            'defaults' => [
+                16 => [
+                    '_acl' => [
+                        'api_action_cache_index',
+                    ],
+                ],
+            ],
+            'methods' => [
+                16 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[16],
+    ],
+    []
+); }];

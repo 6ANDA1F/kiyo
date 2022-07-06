@@ -1,0 +1,216 @@
+<?php //Shopware%255CCore%255CCheckout%255COrder%255CSalesChannel%255COrderRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['Shopware\\Core\\Framework\\Routing\\Annotation\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Entity')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Entity' => [
+            'value' => [
+                1 => 'order',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                2 => '/order',
+            ],
+            'tags' => [
+                2 => [
+                    'Store API',
+                    'Order',
+                ],
+            ],
+            'summary' => [
+                2 => 'Fetch a list of orders',
+            ],
+            'description' => [
+                2 => 'List orders of a customer.',
+                10 => 'Check if the payment method of the order is still changeable.',
+                15 => 'An array of orders and an indicator if the payment of the order can be changed.',
+            ],
+            'operationId' => [
+                2 => 'readOrder',
+            ],
+            'parameters' => [
+                2 => [
+                    $o[3],
+                ],
+            ],
+            'requestBody' => [
+                2 => $o[6],
+            ],
+            'responses' => [
+                2 => [
+                    $o[15],
+                ],
+            ],
+            '_context' => [
+                2 => $o[21],
+                $o[4],
+                6 => $o[7],
+                9 => $o[13],
+                $o[11],
+                15 => $o[16],
+                18 => $o[19],
+            ],
+            'name' => [
+                3 => 'Api-Basic-Parameters',
+            ],
+            'logger' => [
+                4 => $o[5],
+                7 => $o[8],
+                11 => $o[12],
+                13 => $o[14],
+                16 => $o[17],
+                19 => $o[20],
+                21 => $o[22],
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                11 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                7 => 1009,
+                11 => 1009,
+                13 => 1009,
+                16 => 1009,
+                19 => 1009,
+                21 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                7 => 'Annotation',
+                11 => 'Annotation',
+                13 => 'Annotation',
+                16 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                7 => 'DocParser',
+                11 => 'DocParser',
+                13 => 'DocParser',
+                16 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                11 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                11 => [
+                    $o[10],
+                ],
+                13 => [
+                    $o[9],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                21 => [
+                    $o[2],
+                ],
+            ],
+            'required' => [
+                6 => true,
+            ],
+            '_unmerged' => [
+                6 => [
+                    $o[9],
+                ],
+                15 => [
+                    $o[18],
+                ],
+            ],
+            'properties' => [
+                9 => [
+                    $o[10],
+                ],
+            ],
+            'property' => [
+                10 => 'checkPromotion',
+            ],
+            'type' => [
+                10 => 'boolean',
+            ],
+            'response' => [
+                15 => '200',
+            ],
+            'ref' => [
+                18 => '#/components/schemas/OrderRouteResponse',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                23 => '/store-api/order',
+            ],
+            'name' => [
+                23 => 'store-api.order',
+            ],
+            'methods' => [
+                23 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[2],
+        $o[23],
+    ],
+    []
+); }];

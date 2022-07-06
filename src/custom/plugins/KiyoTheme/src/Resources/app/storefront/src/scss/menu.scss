@@ -1,0 +1,52 @@
+.offcanvas {
+  background: none;
+  backdrop-filter: blur(15px);
+  text-transform: uppercase;
+  .offcanvas-close {
+    flex-direction: row !important;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    .icon {
+      color: black;
+    }
+  }
+
+  .navigation-offcanvas-overlay {
+    background: none;
+    backdrop-filter: blur(15px);
+  }
+
+  .navigation-offcanvas-placeholder {
+    background: none;
+    backdrop-filter: blur(15px);
+  }
+}
+
+.modal-backdrop {
+  &.modal-backdrop-open {
+    opacity: 0;
+  }
+}
+
+//TODO check if this can be done more cleanly
+div.navigation-offcanvas-headline {
+  display: none;
+}
+
+.nav-item {
+  font-family: SuisseIntlMono-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #222222;
+  padding: 0 20px;
+  //backdrop-filter: blur(10px);
+}
+
+.nav-item {
+  &.navigation-offcanvas-headline {
+    color: #FF595C;
+    font-weight: 700;
+  }
+}

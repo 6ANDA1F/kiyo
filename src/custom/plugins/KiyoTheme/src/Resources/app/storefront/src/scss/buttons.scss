@@ -1,0 +1,60 @@
+.btn-primary {
+  font-family: SuisseIntlMono-Regular;
+  font-weight: 400;
+  background-color: black;
+}
+
+.btn.btn-primary,
+.address-editor-select:not(.collapsed),
+.address-editor-edit:not(.collapsed),
+.address-editor-create:not(.collapsed) {
+  font-family: 'SuisseIntlMono-Regular';
+  background-color: #000000;
+  min-width: 200px;
+  padding: 12px 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary:hover,
+.address-editor-select:not(.collapsed):hover,
+.address-editor-edit:not(.collapsed):hover,
+.address-editor-create:not(.collapsed):hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  border-color: #000000;
+}
+
+.btn-block {
+  width: auto;
+}
+
+.btn {
+  &.btn-buy {
+    font-family: 'SuisseIntlMono-Regular';
+    background-color: #EDEDED;
+    min-width: 200px;
+    padding: 12px 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid #EDEDED;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+}
+
+.btn:hover {
+  &.btn-buy {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #000000;
+    border: 1px solid #000000;
+  }
+
+}

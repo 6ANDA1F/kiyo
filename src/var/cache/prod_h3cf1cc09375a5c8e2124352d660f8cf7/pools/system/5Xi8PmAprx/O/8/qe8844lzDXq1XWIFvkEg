@@ -1,0 +1,352 @@
+<?php //Shopware%255CCore%255CContent%255CProduct%255CSalesChannel%255CReview%255CProductReviewSaveRoute%2523save
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.3.2.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/product/{productId}/review',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Product',
+                ],
+            ],
+            'summary' => [
+                1 => 'Save a product review',
+            ],
+            'description' => [
+                1 => 'Saves a review for a product. Reviews have to be activated in the settings.',
+                'Identifier of the product which is reviewed.',
+                12 => 'The name of the review author. If not set, the first name of the customer is chosen.',
+                15 => 'The email address of the review author. If not set, the email of the customer is chosen.',
+                18 => 'The title of the review.',
+                24 => 'The content of review.',
+                30 => 'The review rating for the product.',
+                38 => 'Success response indicating the review was saved successfuly.',
+            ],
+            'operationId' => [
+                1 => 'saveProductReview',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[8],
+            ],
+            'responses' => [
+                1 => [
+                    $o[38],
+                ],
+            ],
+            '_context' => [
+                1 => $o[41],
+                $o[6],
+                $o[4],
+                8 => $o[9],
+                11 => $o[36],
+                $o[13],
+                15 => $o[16],
+                18 => $o[19],
+                21 => $o[22],
+                24 => $o[25],
+                27 => $o[28],
+                30 => $o[31],
+                33 => $o[34],
+                38 => $o[39],
+            ],
+            'name' => [
+                2 => 'productId',
+            ],
+            'in' => [
+                2 => 'path',
+            ],
+            'required' => [
+                2 => true,
+                11 => [
+                    'title',
+                    'content',
+                    'points',
+                ],
+                21 => true,
+                27 => true,
+                33 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            'type' => [
+                3 => 'string',
+                12 => 'string',
+                15 => 'string',
+                21 => 'string',
+                27 => 'string',
+                33 => 'integer',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+                13 => $o[14],
+                16 => $o[17],
+                19 => $o[20],
+                22 => $o[23],
+                25 => $o[26],
+                28 => $o[29],
+                31 => $o[32],
+                34 => $o[35],
+                36 => $o[37],
+                39 => $o[40],
+                41 => $o[42],
+            ],
+            'filename' => [
+                4 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                16 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                22 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                25 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                28 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                31 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                34 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                36 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                39 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                41 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                9 => 1009,
+                13 => 1009,
+                16 => 1009,
+                19 => 1009,
+                22 => 1009,
+                25 => 1009,
+                28 => 1009,
+                31 => 1009,
+                34 => 1009,
+                36 => 1009,
+                39 => 1009,
+                41 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                13 => 'Annotation',
+                16 => 'Annotation',
+                19 => 'Annotation',
+                22 => 'Annotation',
+                25 => 'Annotation',
+                28 => 'Annotation',
+                31 => 'Annotation',
+                34 => 'Annotation',
+                36 => 'Annotation',
+                39 => 'Annotation',
+                41 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                13 => 'DocParser',
+                16 => 'DocParser',
+                19 => 'DocParser',
+                22 => 'DocParser',
+                25 => 'DocParser',
+                28 => 'DocParser',
+                31 => 'DocParser',
+                34 => 'DocParser',
+                36 => 'DocParser',
+                39 => 'DocParser',
+                41 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                16 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                22 => 'Shopware\\Core\\Framework\\Compatibility',
+                25 => 'Shopware\\Core\\Framework\\Compatibility',
+                28 => 'Shopware\\Core\\Framework\\Compatibility',
+                31 => 'Shopware\\Core\\Framework\\Compatibility',
+                34 => 'Shopware\\Core\\Framework\\Compatibility',
+                36 => 'Shopware\\Core\\Framework\\Compatibility',
+                39 => 'Shopware\\Core\\Framework\\Compatibility',
+                41 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                16 => [
+                    $o[15],
+                ],
+                19 => [
+                    $o[18],
+                ],
+                22 => [
+                    $o[21],
+                ],
+                25 => [
+                    $o[24],
+                ],
+                28 => [
+                    $o[27],
+                ],
+                31 => [
+                    $o[30],
+                ],
+                34 => [
+                    $o[33],
+                ],
+                36 => [
+                    $o[11],
+                ],
+                39 => [
+                    $o[38],
+                ],
+                41 => [
+                    $o[1],
+                ],
+            ],
+            '_unmerged' => [
+                8 => [
+                    $o[11],
+                ],
+                18 => [
+                    $o[21],
+                ],
+                24 => [
+                    $o[27],
+                ],
+                30 => [
+                    $o[33],
+                ],
+            ],
+            'properties' => [
+                11 => [
+                    $o[12],
+                    $o[15],
+                    $o[18],
+                    $o[24],
+                    $o[30],
+                ],
+            ],
+            'property' => [
+                12 => 'name',
+                15 => 'email',
+                18 => 'title',
+                24 => 'content',
+                30 => 'points',
+            ],
+            'minLength' => [
+                21 => 5,
+                27 => 40,
+            ],
+            'maximum' => [
+                33 => 5,
+            ],
+            'minimum' => [
+                33 => 1,
+            ],
+            'response' => [
+                38 => '200',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                43 => '/store-api/product/{productId}/review',
+            ],
+            'name' => [
+                43 => 'store-api.product-review.save',
+            ],
+            'defaults' => [
+                43 => [
+                    '_loginRequired' => true,
+                ],
+            ],
+            'methods' => [
+                43 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[43],
+    ],
+    []
+); }];

@@ -1,0 +1,189 @@
+<?php //Shopware%255CCore%255CContent%255CMailTemplate%255CApi%255CMailActionController%2523validate
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Property'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.0.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/_action/mail-template/validate',
+            ],
+            'tags' => [
+                1 => [
+                    'Admin API',
+                    'Mail Operations',
+                ],
+            ],
+            'summary' => [
+                1 => 'Validate a mail content',
+            ],
+            'description' => [
+                1 => 'Validates if content for a mail can be rendered without sending an email.',
+                6 => 'The content of the mail in HTML format.',
+                9 => 'The content of the mail as plain text.',
+                14 => 'Returns a no content response indicating the mail content was rendered successfully.',
+            ],
+            'operationId' => [
+                1 => 'validate',
+            ],
+            'requestBody' => [
+                1 => $o[2],
+            ],
+            'responses' => [
+                1 => [
+                    $o[14],
+                ],
+            ],
+            '_context' => [
+                1 => $o[17],
+                $o[3],
+                5 => $o[12],
+                $o[7],
+                9 => $o[10],
+                14 => $o[15],
+            ],
+            'required' => [
+                2 => true,
+                5 => [
+                    'contentHtml',
+                    'contentPlain',
+                ],
+            ],
+            '_unmerged' => [
+                2 => [
+                    $o[5],
+                ],
+            ],
+            'logger' => [
+                3 => $o[4],
+                7 => $o[8],
+                10 => $o[11],
+                12 => $o[13],
+                15 => $o[16],
+                17 => $o[18],
+            ],
+            'filename' => [
+                3 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                7 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                10 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                12 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                15 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/var/www/html/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                3 => 1009,
+                7 => 1009,
+                10 => 1009,
+                12 => 1009,
+                15 => 1009,
+                17 => 1009,
+            ],
+            'method' => [
+                3 => 'Annotation',
+                7 => 'Annotation',
+                10 => 'Annotation',
+                12 => 'Annotation',
+                15 => 'Annotation',
+                17 => 'Annotation',
+            ],
+            'class' => [
+                3 => 'DocParser',
+                7 => 'DocParser',
+                10 => 'DocParser',
+                12 => 'DocParser',
+                15 => 'DocParser',
+                17 => 'DocParser',
+            ],
+            'namespace' => [
+                3 => 'Shopware\\Core\\Framework\\Compatibility',
+                7 => 'Shopware\\Core\\Framework\\Compatibility',
+                10 => 'Shopware\\Core\\Framework\\Compatibility',
+                12 => 'Shopware\\Core\\Framework\\Compatibility',
+                15 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                3 => [
+                    $o[2],
+                ],
+                7 => [
+                    $o[6],
+                ],
+                10 => [
+                    $o[9],
+                ],
+                12 => [
+                    $o[5],
+                ],
+                15 => [
+                    $o[14],
+                ],
+                17 => [
+                    $o[1],
+                ],
+            ],
+            'properties' => [
+                5 => [
+                    $o[6],
+                    $o[9],
+                ],
+            ],
+            'property' => [
+                6 => 'contentHtml',
+                9 => 'contentPlain',
+            ],
+            'type' => [
+                6 => 'string',
+                9 => 'string',
+            ],
+            'response' => [
+                14 => '204',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                19 => '/api/_action/mail-template/validate',
+            ],
+            'name' => [
+                19 => 'api.action.mail_template.validate',
+            ],
+            'methods' => [
+                19 => [
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[19],
+    ],
+    []
+); }];

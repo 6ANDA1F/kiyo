@@ -1,0 +1,54 @@
+@media (min-width: 992px) {
+
+  .cms-block-product-three-column {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .product-action {
+    margin-top: 14px;
+  }
+
+}
+
+.product-badges,
+.product-variant-characteristics,
+.product-rating,
+.product-price-unit,
+.product-cheapest-price {
+  display: none;
+}
+
+.product-image-wrapper {
+  margin-bottom: 13px;
+}
+
+.product-name {
+  color: #000000;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.product-description {
+  margin-bottom: 23px;
+  margin-top: 4px;
+  font-family: 'SuisseIntl-Regular';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #000000;
+  height: auto;
+}
+
+.product-price {
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}

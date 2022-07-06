@@ -1,0 +1,289 @@
+<?php //Shopware%255CCore%255CContent%255CCms%255CSalesChannel%255CCmsRoute%2523load
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Shopware\\Core\\Framework\\Routing\\Annotation\\Since'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Shopware\\Core\\Framework\\Routing\\Annotation\\Since')),
+        clone ($p['OpenApi\\Annotations\\Post'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Post')),
+        clone ($p['OpenApi\\Annotations\\Parameter'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Parameter')),
+        clone ($p['OpenApi\\Annotations\\Schema'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Schema')),
+        clone ($p['OpenApi\\Context'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Context')),
+        clone ($p['OpenApi\\Logger\\DefaultLogger'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Logger\\DefaultLogger')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\RequestBody'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\RequestBody')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\JsonContent'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\JsonContent')),
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Schema'],
+        clone ($p['OpenApi\\Annotations\\Property'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Property')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['OpenApi\\Annotations\\Response'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('OpenApi\\Annotations\\Response')),
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\JsonContent'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Annotations\\Response'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone $p['OpenApi\\Context'],
+        clone $p['OpenApi\\Logger\\DefaultLogger'],
+        clone ($p['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+    ],
+    null,
+    [
+        'Shopware\\Core\\Framework\\Routing\\Annotation\\Since' => [
+            'value' => [
+                '6.2.0.0',
+            ],
+        ],
+        'stdClass' => [
+            'path' => [
+                1 => '/cms/{id}',
+            ],
+            'tags' => [
+                1 => [
+                    'Store API',
+                    'Content',
+                ],
+            ],
+            'summary' => [
+                1 => 'Fetch and resolve a CMS page',
+            ],
+            'description' => [
+                1 => 'Loads a content management page by its identifier and resolve the slot data. This could be media files, product listing and so on.'."\n"
+                    ."\n"
+                    .'**Important notice**'."\n"
+                    ."\n"
+                    .'The criteria passed with this route also affects the listing, if there is one within the cms page.',
+                'Identifier of the CMS page to be resolved',
+                12 => 'The product listing criteria only has an effect, if the cms page contains a product listing.',
+                16 => 'Resolves only the given slot identifiers. The identifiers have to be seperated by a `|` character.',
+                23 => 'The loaded cms page',
+            ],
+            'operationId' => [
+                1 => 'readCms',
+            ],
+            'parameters' => [
+                1 => [
+                    $o[2],
+                ],
+            ],
+            'requestBody' => [
+                1 => $o[8],
+            ],
+            'responses' => [
+                1 => [
+                    $o[23],
+                    $o[29],
+                ],
+            ],
+            '_context' => [
+                1 => $o[32],
+                $o[6],
+                $o[4],
+                8 => $o[9],
+                11 => $o[21],
+                $o[13],
+                15 => $o[19],
+                $o[17],
+                23 => $o[24],
+                26 => $o[27],
+                29 => $o[30],
+            ],
+            'name' => [
+                2 => 'id',
+            ],
+            'in' => [
+                2 => 'path',
+            ],
+            'required' => [
+                2 => true,
+            ],
+            'schema' => [
+                2 => $o[3],
+            ],
+            'type' => [
+                3 => 'string',
+                11 => 'object',
+                15 => 'object',
+                'string',
+            ],
+            'pattern' => [
+                3 => '^[0-9a-f]{32}$',
+            ],
+            'logger' => [
+                4 => $o[5],
+                6 => $o[7],
+                9 => $o[10],
+                13 => $o[14],
+                17 => $o[18],
+                19 => $o[20],
+                21 => $o[22],
+                24 => $o[25],
+                27 => $o[28],
+                30 => $o[31],
+                32 => $o[33],
+            ],
+            'filename' => [
+                4 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                6 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                9 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                13 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                17 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                19 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                21 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                24 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                27 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                30 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+                32 => '/Users/owenroberts/KIYO/Site/src/vendor/shopware/core/Framework/Compatibility/DocParser.php',
+            ],
+            'line' => [
+                4 => 1009,
+                6 => 1009,
+                9 => 1009,
+                13 => 1009,
+                17 => 1009,
+                19 => 1009,
+                21 => 1009,
+                24 => 1009,
+                27 => 1009,
+                30 => 1009,
+                32 => 1009,
+            ],
+            'method' => [
+                4 => 'Annotation',
+                6 => 'Annotation',
+                9 => 'Annotation',
+                13 => 'Annotation',
+                17 => 'Annotation',
+                19 => 'Annotation',
+                21 => 'Annotation',
+                24 => 'Annotation',
+                27 => 'Annotation',
+                30 => 'Annotation',
+                32 => 'Annotation',
+            ],
+            'class' => [
+                4 => 'DocParser',
+                6 => 'DocParser',
+                9 => 'DocParser',
+                13 => 'DocParser',
+                17 => 'DocParser',
+                19 => 'DocParser',
+                21 => 'DocParser',
+                24 => 'DocParser',
+                27 => 'DocParser',
+                30 => 'DocParser',
+                32 => 'DocParser',
+            ],
+            'namespace' => [
+                4 => 'Shopware\\Core\\Framework\\Compatibility',
+                6 => 'Shopware\\Core\\Framework\\Compatibility',
+                9 => 'Shopware\\Core\\Framework\\Compatibility',
+                13 => 'Shopware\\Core\\Framework\\Compatibility',
+                17 => 'Shopware\\Core\\Framework\\Compatibility',
+                19 => 'Shopware\\Core\\Framework\\Compatibility',
+                21 => 'Shopware\\Core\\Framework\\Compatibility',
+                24 => 'Shopware\\Core\\Framework\\Compatibility',
+                27 => 'Shopware\\Core\\Framework\\Compatibility',
+                30 => 'Shopware\\Core\\Framework\\Compatibility',
+                32 => 'Shopware\\Core\\Framework\\Compatibility',
+            ],
+            'annotations' => [
+                4 => [
+                    $o[3],
+                ],
+                6 => [
+                    $o[2],
+                ],
+                9 => [
+                    $o[8],
+                ],
+                13 => [
+                    $o[12],
+                ],
+                17 => [
+                    $o[16],
+                ],
+                19 => [
+                    $o[15],
+                ],
+                21 => [
+                    $o[11],
+                ],
+                24 => [
+                    $o[23],
+                ],
+                27 => [
+                    $o[26],
+                ],
+                30 => [
+                    $o[29],
+                ],
+                32 => [
+                    $o[1],
+                ],
+            ],
+            '_unmerged' => [
+                8 => [
+                    $o[11],
+                ],
+                23 => [
+                    $o[26],
+                ],
+            ],
+            'allOf' => [
+                11 => [
+                    $o[12],
+                    $o[15],
+                ],
+            ],
+            'ref' => [
+                12 => '#/components/schemas/ProductListingCriteria',
+                26 => '#/components/schemas/CmsPage',
+                29 => '#/components/responses/404',
+            ],
+            'properties' => [
+                15 => [
+                    $o[16],
+                ],
+            ],
+            'property' => [
+                16 => 'slots',
+            ],
+            'response' => [
+                23 => '200',
+                29 => '404',
+            ],
+        ],
+        'Symfony\\Component\\Routing\\Annotation\\Route' => [
+            'path' => [
+                34 => '/store-api/cms/{id}',
+            ],
+            'name' => [
+                34 => 'store-api.cms.detail',
+            ],
+            'methods' => [
+                34 => [
+                    'GET',
+                    'POST',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[1],
+        $o[34],
+    ],
+    []
+); }];
