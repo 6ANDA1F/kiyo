@@ -46,6 +46,15 @@ main.content-main {
   padding: 0;
 }
 
+@media (min-width: 768px) { 
+  
+  .header-main {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  
+}
+
 @media (min-width: 992px) {
 
   .container,

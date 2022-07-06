@@ -36,7 +36,7 @@ div.navigation-offcanvas-headline {
 }
 
 .nav-item {
-  font-family: SuisseIntlMono-Regular;
+  font-family: 'SuisseIntlMono-Regular';
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
@@ -51,3 +51,37 @@ div.navigation-offcanvas-headline {
     font-weight: 700;
   }
 }
+
+
+/* ---------- DESKTOP NAV STYLES ---------- */
+
+.main-navigation {
+  right: 53px;
+  top: 152px;
+}
+
+.main-navigation .container {
+  padding: 0;
+}
+
+.nav-main {
+  position: fixed;
+  z-index: 999;
+}
+
+.nav {
+  display: inline;
+}
+
+.nav-link span {
+  font-family: 'SuisseIntlMono-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
