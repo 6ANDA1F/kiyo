@@ -15,6 +15,21 @@ main.content-main {
 }
 
 
+.row, .account-content, .is-act-cartpage .checkout .checkout-container, .is-act-checkoutregisterpage .checkout .checkout-container, .is-act-confirmpage .checkout .checkout-container, .is-ctl-accountorder .checkout .checkout-container, .is-act-finishpage .checkout .checkout-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.cms-block-container {
+  padding: 0;
+}
+
+
 @media (min-width: 992px) {
 
   .container,
