@@ -17,7 +17,8 @@
     "app/storefront/src/scss/header.scss",
     "app/storefront/src/scss/menu.scss",
     "app/storefront/src/scss/cms-block-text-on-image.scss",
-    "app/storefront/src/scss/block-product-three-collumn.scss"
+    "app/storefront/src/scss/block-product-three-collumn.scss",
+    "app/storefront/src/scss/cms-element-text.scss"
   ],
   "script": [
     "@Storefront",

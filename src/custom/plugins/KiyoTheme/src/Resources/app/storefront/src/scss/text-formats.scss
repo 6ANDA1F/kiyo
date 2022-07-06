@@ -9,18 +9,20 @@ body {
   background-color: #FFFFFF;
 }
 
+h2 {
+  font-family: 'SuisseIntl-SemiBold';
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
 p {
   font-family: 'SuisseIntl-Regular';
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
   color: #000000;
-}
-
-h2 {
-  font-family: 'SuisseIntl-Regular';
-  font-weight: 600;
-  line-height: 24px;
-  font-size: 16px;
-  color: #000000;
+  margin-bottom: 22px;
 }
