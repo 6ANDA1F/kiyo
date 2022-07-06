@@ -38,6 +38,9 @@ main.content-main {
   padding: 0;
 }
 
+.card-body {
+  padding: 0;
+}
 
 @media (min-width: 992px) {
 
@@ -55,10 +58,6 @@ main.content-main {
   .row, .account-content, .is-act-cartpage .checkout .checkout-container, .is-act-checkoutregisterpage .checkout .checkout-container, .is-act-confirmpage .checkout .checkout-container, .is-ctl-accountorder .checkout .checkout-container, .is-act-finishpage .checkout .checkout-container {
     margin-right: 0;
     margin-left: 0;
-  }
-
-  .card-body {
-    padding: 0;
   }
 
 }
