@@ -1,6 +1,7 @@
 .offcanvas {
   background: none;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   text-transform: uppercase;
   .offcanvas-close {
     flex-direction: row !important;
@@ -14,12 +15,12 @@
 
   .navigation-offcanvas-overlay {
     background: none;
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
 
   .navigation-offcanvas-placeholder {
     background: none;
-    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
   }
 }
 
