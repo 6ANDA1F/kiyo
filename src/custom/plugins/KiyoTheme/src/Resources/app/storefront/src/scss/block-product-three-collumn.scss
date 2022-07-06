@@ -9,6 +9,10 @@
     margin-top: 14px;
   }
 
+  .cms-element-product-box {
+    padding-top: 0;
+  }
+
 }
 
 .cms-element-product-box {
@@ -33,7 +37,7 @@
 }
 
 .product-image.is-standard {
-  object-fit: none; 
+  object-fit: unset;
 }
 
 .product-image {
