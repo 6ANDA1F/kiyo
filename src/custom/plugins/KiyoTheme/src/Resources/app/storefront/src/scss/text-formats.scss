@@ -46,3 +46,25 @@ h6:last-child,
 p:last-child {
   margin-bottom: 0;
 }
+
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 48px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+}
+
