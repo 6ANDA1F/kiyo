@@ -4,7 +4,7 @@ body {
   .kiyo-logo {
     color: #FF595C;
     margin: 0;
-    font-family: SuisseIntlMono-Bold;
+    font-family: 'SuisseIntlMono-Bold';
     font-weight: 700;
     font-size: 28px;
   }
@@ -48,7 +48,7 @@ main.content-main {
 
 @media (min-width: 768px) { 
   
-  .header-main {
+  body .header-main .kiyo-logo {
     font-size: 48px;
     line-height: 62px;
   }

@@ -59,6 +59,7 @@ div.navigation-offcanvas-headline {
 .main-navigation {
   right: 53px;
   top: 152px;
+  position: fixed;
 }
 
 .main-navigation .container {
@@ -72,6 +73,10 @@ div.navigation-offcanvas-headline {
 
 .nav {
   display: inline;
+}
+
+.nav-link {
+  padding: 0;
 }
 
 .nav-link span {
