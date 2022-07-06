@@ -29,6 +29,15 @@
 
 .product-image-wrapper {
   margin-bottom: 13px;
+  height: auto;
+}
+
+.product-image.is-standard {
+  object-fit: none; 
+}
+
+.product-image {
+  max-height: none;
 }
 
 .product-name {
