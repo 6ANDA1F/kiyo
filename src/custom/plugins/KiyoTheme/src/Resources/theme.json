@@ -9,6 +9,7 @@
   "style": [
     "app/storefront/src/scss/overrides.scss",
     "@StorefrontBootstrap",
+    "app/storefront/src/scss/hidden-elements.scss",
     "app/storefront/src/scss/fonts.scss",
     "app/storefront/src/scss/buttons.scss",
     "app/storefront/src/scss/text-formats.scss",
