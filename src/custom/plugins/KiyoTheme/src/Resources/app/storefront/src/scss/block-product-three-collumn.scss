@@ -11,6 +11,14 @@
 
 }
 
+.cms-element-product-box {
+  padding-top: 40px;
+}
+
+.cms-block-container-row .col-md-4:first-child .cms-element-product-box {
+  padding-top: 0;
+}
+
 .product-badges,
 .product-variant-characteristics,
 .product-rating,
