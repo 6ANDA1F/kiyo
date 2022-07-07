@@ -1,6 +1,9 @@
 .cms-block-text-on-image {
   .cms-element-text {
     height: 100vh;
+    .cms-element-alignment {
+      align-self: end !important;
+    }
   }
 }
 
@@ -10,7 +13,12 @@
   }
 }
 
-//
-//.cms-block.bg-image {
-//
-//}
+@media (min-width: 992px) {
+  .cms-block-text-on-image {
+    .cms-element-text {
+      .cms-element-alignment {
+        align-self: center !important;
+      }
+    }
+  }
+}
