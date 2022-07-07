@@ -8,6 +8,12 @@ body {
     font-weight: 700;
     font-size: 28px;
   }
+  .kiyotm {
+    font-family: SuisseIntlMono-Bold;
+    font-weight: 700;
+    font-size: 24px;
+    display: none;
+  }
 }
 
 main.content-main {
@@ -51,6 +57,10 @@ main.content-main {
   body .header-logo-main .kiyo-logo {
     font-size: 48px;
     line-height: 62px;
+  }
+
+  body .kiyotm {
+    display: block;
   }
 
   header.header-main {
