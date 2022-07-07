@@ -37,6 +37,19 @@ p {
   margin-bottom: 22px;
 }
 
+a {
+  font-family: SuisseIntlMono-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #222222;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #222222;
+  }
+}
+
 h1:last-child, 
 h2:last-child, 
 h3:last-child,  
