@@ -20,7 +20,8 @@
     "app/storefront/src/scss/cms-block-text-on-image.scss",
     "app/storefront/src/scss/block-product-three-collumn.scss",
     "app/storefront/src/scss/cms-element-text.scss",
-    "app/storefront/src/scss/cms-block-center-text.scss"
+    "app/storefront/src/scss/cms-block-center-text.scss",
+    "app/storefront/src/scss/cms-block-gallery-buybox.scss"
   ],
   "script": [
     "@Storefront",
