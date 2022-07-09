@@ -209,30 +209,31 @@
 
     {% block layout_footer_bottom %}
         <div class="footer-bottom">
-            {% block layout_footer_service_menu %}
-                {% if page.header.serviceMenu is not null and page.header.serviceMenu is not empty %}
-                        <div class="container">
-                            {% block layout_footer_service_menu_content %}
-                                {% apply spaceless %}
-                                    <ul class="footer-service-menu-list list-unstyled">
-                                        {% for serviceMenuItem in page.header.serviceMenu %}
-                                            {% block layout_footer_service_menu_item %}
-                                                <li class="footer-service-menu-item">
-                                                    <a class="footer-service-menu-link"
-                                                       href="{{ category_url(serviceMenuItem) }}"
-                                                       {% if category_linknewtab(serviceMenuItem) %}target="_blank"{% endif %}
-                                                       title="{{ serviceMenuItem.translated.name }}">
-                                                        {{ serviceMenuItem.translated.name }}
-                                                    </a>
-                                                </li>
-                                            {% endblock %}
-                                        {% endfor %}
-                                    </ul>
-                                {% endapply %}
-                            {% endblock %}
-                        </div>
-                {% endif %}
-            {% endblock %}
+{#            {% block layout_footer_service_menu %}#}
+{#                {% if page.header.serviceMenu is not null and page.header.serviceMenu is not empty %}#}
+{#                        <div class="container">#}
+{#                            {% block layout_footer_service_menu_content %}#}
+{#                                {% apply spaceless %}#}
+{#                                    <ul class="footer-service-menu-list list-unstyled">#}
+{#                                        {% for serviceMenuItem in page.header.serviceMenu %}#}
+{#                                            {% block layout_footer_service_menu_item %}#}
+{#                                                <li class="footer-service-menu-item">#}
+{#                                                    <a class="footer-service-menu-link"#}
+{#                                                       href="{{ category_url(serviceMenuItem) }}"#}
+{#                                                       {% if category_linknewtab(serviceMenuItem) %}target="_blank"{% endif %}#}
+{#                                                       title="{{ serviceMenuItem.translated.name }}">#}
+{#                                                        {{ serviceMenuItem.translated.name }}#}
+{#                                                    </a>#}
+{#                                                </li>#}
+{#                                            {% endblock %}#}
+{#                                        {% endfor %}#}
+{#                                    </ul>#}
+{#                                {% endapply %}#}
+{#                            {% endblock %}#}
+{#                        </div>#}
+{#                {% endif %}#}
+{#            {% endblock %}#}
+{#            {{ dump() }}#}
             {% block layout_footer_bottom_partner_logos %}
                 <div class="logos">
                     <div class="row align-items-center">

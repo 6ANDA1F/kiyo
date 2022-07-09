@@ -5,9 +5,89 @@
     <div class="main-navigation"
          id="mainNavigation"
          data-flyout-menu="true">
-        {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+        {% block layout_header_navigation %}
+            <div class="row align-items-center header-row">
+                {% block layout_header_actions %}
+                    <div class="col-12 order-1 col-sm-auto order-sm-2 header-actions-col">
+                        <div class="row {{ gridNoGuttersClass }}">
+                            {% block layout_header_navigation_toggle %}
+                                <div class="col">
+                                    <div class="menu-button-mobile">
+                                        {% block layout_header_navigation_toggle_button %}
+                                            <button class="btn nav-main-toggle-btn header-actions-btn"
+                                                    type="button"
+                                                    data-offcanvas-menu="true"
+                                                    aria-label="{{ "general.menuLink"|trans|striptags }}">
+                                                {% block layout_header_navigation_toggle_button_icon %}
+                                                    {% sw_icon 'stack' %}
+                                                {% endblock %}
+                                            </button>
+                                        {% endblock %}
+                                    </div>
+                                    <div class="menu-button-desktop">
+                                        <button class="btn nav-main-toggle-btn header-actions-btn"
+                                                type="button"
+                                                data-offcanvas-menu="true"
+                                                aria-label="{{ "general.menuLink"|trans|striptags }}">
+                                            {% block layout_header_navigation_toggle_button_text %}
+                                               Menu
+                                            {% endblock %}
+                                        </button>
+                                    </div>
+                                </div>
+                            {% endblock %}
+
+                            {% block layout_header_logo %}
+                                <div class="col-auto d-sm-none align-self-center">
+                                    {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
+                                </div>
+                            {% endblock %}
+
+                            {#                        {% if config('core.cart.wishlistEnabled') %}#}
+                            {#                            {% block layout_header_actions_wishlist %}#}
+                            {#                                <div class="col-auto">#}
+                            {#                                    <div class="header-wishlist">#}
+                            {#                                        <a class="btn header-wishlist-btn header-actions-btn"#}
+                            {#                                           href="{{ path('frontend.wishlist.page') }}"#}
+                            {#                                           title="{{ 'header.wishlist'|trans|striptags }}"#}
+                            {#                                           aria-label="{{ 'header.wishlist'|trans|striptags }}">#}
+                            {#                                            {% sw_include '@Storefront/storefront/layout/header/actions/wishlist-widget.html.twig' %}#}
+                            {#                                        </a>#}
+                            {#                                    </div>#}
+                            {#                                </div>#}
+                            {#                            {% endblock %}#}
+                            {#                        {% endif %}#}
+
+                            {#                        {% block layout_header_actions_account %}#}
+                            {#                            <div class="col-auto">#}
+                            {#                                <div class="account-menu">#}
+                            {#                                    {% sw_include '@Storefront/storefront/layout/header/actions/account-widget.html.twig' %}#}
+                            {#                                </div>#}
+                            {#                            </div>#}
+                            {#                        {% endblock %}#}
+
+                            {#                        {% block layout_header_actions_cart %}#}
+                            {#                            <div class="col-auto">#}
+                            {#                                <div class="header-cart"#}
+                            {#                                     data-offcanvas-cart="true">#}
+                            {#                                    <a class="btn header-cart-btn header-actions-btn"#}
+                            {#                                       href="{{ path('frontend.checkout.cart.page') }}"#}
+                            {#                                       data-cart-widget="true"#}
+                            {#                                       title="{{ 'checkout.cartTitle'|trans|striptags }}"#}
+                            {#                                       aria-label="{{ 'checkout.cartTitle'|trans|striptags }}">#}
+                            {#                                        {% sw_include '@Storefront/storefront/layout/header/actions/cart-widget.html.twig' %}#}
+                            {#                                    </a>#}
+                            {#                                </div>#}
+                            {#                            </div>#}
+                            {#                        {% endblock %}#}
+                        </div>
+                    </div>
+                {% endblock %}
+            </div>
+        {% endblock %}
         {% block layout_main_navigation_navbar %}
-            <div class="container">
+            <div class="service-menu">
+                {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
                 {% block layout_main_navigation_menu %}
                     <nav class="nav main-navigation-menu"
                          itemscope="itemscope"
@@ -30,36 +110,23 @@
                         {% block layout_main_navigation_menu_items %}
                             {% set activePath = page.header.navigation.active.path %}
 
-                            {% for treeItem in page.header.navigation.tree %}
-                                {% set category = treeItem.category %}
+                            {% for serviceMenuItem in page.header.serviceMenu %}
+                                {% set category = serviceMenuItem %}
                                 {% set name = category.translated.name %}
 
                                 {# @deprecated tag:v6.5.0 - Use "category.id" directly instead. #}
                                 {% set categorId = category.id %}
 
                                 {% block layout_main_navigation_menu_item %}
-                                    {% if category.type == 'folder' %}
-                                        <div class="nav-link main-navigation-link"
-                                                {% if treeItem.children|length > 0 %}
-                                                    data-flyout-menu-trigger="{{ category.id }}"
-                                                {% endif %}
-                                             title="{{ name }}">
-                                            <div class="main-navigation-link-text">
-                                                <span itemprop="name">{{ name }}</span>
-                                            </div>
-                                        </div>
-                                    {% else %}
                                         <a class="nav-link main-navigation-link{% if category.id == page.header.navigation.active.id or category.id in activePath %} active{% endif %}"
-                                           href="{{ category_url(category) }}"
+                                           href="{{ category_url(serviceMenuItem) }}"
                                            itemprop="url"
-                                           {% if treeItem.children|length > 0 %}data-flyout-menu-trigger="{{ category.id }}"{% endif %}
                                                 {% if category_linknewtab(category) %}target="_blank"{% endif %}
                                            title="{{ name }}">
                                             <div class="main-navigation-link-text">
                                                 <span itemprop="name">{{ name }}</span>
                                             </div>
                                         </a>
-                                    {% endif %}
                                 {% endblock %}
                             {% endfor %}
                         {% endblock %}

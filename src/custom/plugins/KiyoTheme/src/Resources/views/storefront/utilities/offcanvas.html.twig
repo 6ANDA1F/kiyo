@@ -20,13 +20,22 @@ This template will be adjusted to use Bootstraps OffCanvas markup.
         <div class="row align-items-center header-row">
             <div class="col-12 order-1 col-sm-auto order-sm-2 header-actions-col">
                 <div class="row no-gutters">
-                    <div class="col d-sm-none">
+                    <div class="col">
                         {% block utilities_offcanvas_close %}
+                        <div class="menu-button-mobile">
                             <button class="btn offcanvas-close js-offcanvas-close sticky-top">
                                 {% block utilities_offcanvas_close_icon %}
                                     {% sw_icon 'x' style { 'size': 'sm' } %}
                                 {% endblock %}
                             </button>
+                        </div>
+                        <div class="menu-button-desktop">
+                            <button class="btn nav-main-toggle-btn js-offcanvas-close sticky-top">
+                                {% block layout_header_navigation_toggle_button_text %}
+                                    Schliessen
+                                {% endblock %}
+                            </button>
+                        </div>
                         {% endblock %}
                     </div>
 
@@ -36,12 +45,13 @@ This template will be adjusted to use Bootstraps OffCanvas markup.
                 </div>
             </div>
         </div>
+        {% block utilities_offcanvas_content_container %}
+            <div class="offcanvas-content-container">
+                {% block utilities_offcanvas_content %}{% endblock %}
+            </div>
+        {% endblock %}
     </div>
 
-    {% block utilities_offcanvas_content_container %}
-        <div class="offcanvas-content-container">
-            {% block utilities_offcanvas_content %}{% endblock %}
-        </div>
-    {% endblock %}
+
 {% endblock %}
 

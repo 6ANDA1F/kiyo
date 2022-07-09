@@ -1,0 +1,17 @@
+{% set isActive = item.category.id == activeId %}
+{% set url = category_url(item.category) %}
+{% set name = item.category.translated.name %}
+
+<li class="navigation-offcanvas-list-item">
+    {% block layout_navigation_offcanvas_navigation_categories_list_category_item_link %}
+        <a class="navigation-offcanvas-link nav-item nav-link{% if isActive %} active{% endif %}"
+           href="{{ url }}"
+           itemprop="url"
+                {% if category_linknewtab(item.category) %}target="_blank"{% endif %}
+           title="{{ name }}">
+            {% block layout_navigation_offcanvas_navigation_categories_list_category_item_link_text %}
+                <span itemprop="name">{{ name }}</span>
+            {% endblock %}
+        </a>
+    {% endblock %}
+</li>

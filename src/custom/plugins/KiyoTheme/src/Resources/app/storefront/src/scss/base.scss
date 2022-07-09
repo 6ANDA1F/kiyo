@@ -46,13 +46,24 @@ main.content-main {
 
 .cms-section-default.boxed {
   padding-top: 73px;
+  //margin-left: 0;
+  //margin-right: 0;
 }
 
 .card-body {
   padding: 0;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
+
+  .row,.account-content,.is-act-cartpage .checkout .checkout-container,.is-act-checkoutregisterpage .checkout .checkout-container,.is-act-confirmpage .checkout .checkout-container,.is-ctl-accountorder .checkout .checkout-container,.is-act-finishpage .checkout .checkout-container {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .container, .cms-section .boxed {
+    max-width: none;
+  }
   
   body .header-logo-main .kiyo-logo {
     font-size: 48px;
@@ -63,16 +74,25 @@ main.content-main {
     display: block;
   }
 
-  header.header-main {
-    display: none;
-  }
+  //header.header-main {
+  //  display: none;
+  //}
   
 }
 
 @media (min-width: 992px) {
 
+  .container, .cms-section .boxed {
+    max-width: none;
+  }
+
   .container,
   .cms-section-default.boxed {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .offcanvas-content-container {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -86,9 +106,19 @@ main.content-main {
     padding-left: 10px;
   }
 
-  .row, .account-content, .is-act-cartpage .checkout .checkout-container, .is-act-checkoutregisterpage .checkout .checkout-container, .is-act-confirmpage .checkout .checkout-container, .is-ctl-accountorder .checkout .checkout-container, .is-act-finishpage .checkout .checkout-container {
-    margin-right: 0;
-    margin-left: 0;
+  .header-actions-col {
+    padding: 0;
   }
 
+  //.row, .container, .account-content, .is-act-cartpage .checkout .checkout-container, .is-act-checkoutregisterpage .checkout .checkout-container, .is-act-confirmpage .checkout .checkout-container, .is-ctl-accountorder .checkout .checkout-container, .is-act-finishpage .checkout .checkout-container {
+  //  margin-right: 0;
+  //  margin-left: 0;
+  //}
+
+}
+
+@media (min-width: 1200px) {
+  .container, .cms-section .boxed {
+    max-width: none;
+  }
 }

@@ -1,4 +1,18 @@
 //mobile
+.main-navigation {
+  display: block;
+  .service-menu {
+    display: none;
+  }
+  .header-logo-main {
+    padding-right: 20px;
+  }
+}
+
+.menu-button-desktop {
+  display: none;
+}
+
 .offcanvas {
   background: none;
   backdrop-filter: blur(15px);
@@ -57,20 +71,31 @@ div.navigation-offcanvas-headline {
 /* ---------- DESKTOP NAV STYLES ---------- */
 
 .main-navigation {
-  right: 53px;
-  top: 61px;
-  position: fixed;
+  .service-menu, .menu-button-desktop {
+    right: 53px;
+    top: 60px;
+    position: fixed;
+  }
+  .menu-button-desktop {
+    right: 0;
+    left: 60px;
+  }
+  .service-menu {
+    .header-logo-main {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .main-navigation .container {
   padding: 0;
-  margin-top: 32px;
   padding-left: 2px;
 }
 
 .nav-main {
   position: fixed;
   z-index: 999;
+  width: 100%;
 }
 
 .nav {
@@ -90,6 +115,39 @@ div.navigation-offcanvas-headline {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #000000;
+}
+
+//Desktop breakpoint
+@media (min-width: 768px) {
+  .main-navigation {
+    .service-menu {
+      display: block;
+    }
+  }
+
+  .menu-button-desktop {
+    display: block;
+  }
+  .menu-button-mobile {
+    display: none;
+  }
+
+  .navigation-offcanvas {
+    width: 100%;
+
+    .navigation-offcanvas-list-item {
+      margin-bottom: 30px;
+    }
+
+    .header-row {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+  .offcanvas .offcanvas-content-container {
+    width: 100%;
+  }
 }
 
 
