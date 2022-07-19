@@ -1,0 +1,9 @@
+{% block layout_header_actions_cart_widget %}
+    <span>Warenkorb</span>
+    {% if page.cart.lineItems|length > 0 %}
+        <span> ({{ page.cart.lineItems|length }})</span>
+    {% endif %}
+{#    <span class="header-cart-total">#}
+{#        {{ page.cart.price.positionPrice|currency }}{{ "general.star"|trans|sw_sanitize }}#}
+{#    </span>#}
+{% endblock %}
