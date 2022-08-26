@@ -13,6 +13,20 @@
   display: none;
 }
 
+.menu-button-mobile {
+  padding-left: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  color: #000000;
+}
+
+.btn .icon>svg {
+  top: 5px !important;
+  }
+
 .offcanvas {
   background: none;
   backdrop-filter: blur(15px);
@@ -94,8 +108,12 @@ div.navigation-offcanvas-headline {
 
 .nav-main {
   position: fixed;
-  z-index: 999;
+  z-index: 997;
   width: 100%;
+}
+
+.modal-backdrop {
+  z-index: 997;
 }
 
 .nav {
@@ -122,6 +140,7 @@ div.navigation-offcanvas-headline {
   .main-navigation {
     .service-menu {
       display: block;
+      z-index: 999;
     }
   }
 
@@ -143,6 +162,10 @@ div.navigation-offcanvas-headline {
       padding-top: 60px;
       padding-bottom: 60px;
     }
+  }
+
+  .offcanvas {
+    z-index: 998;
   }
 
   .offcanvas .offcanvas-content-container {

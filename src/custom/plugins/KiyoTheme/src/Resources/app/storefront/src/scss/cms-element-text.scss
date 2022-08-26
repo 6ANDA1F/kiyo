@@ -5,3 +5,35 @@
 .cms-block-center-text {
     padding: 36px 0;
 }
+
+.cms-section.pos-0 .cms-block-container .col-12 .cms-element-text {
+    max-width: 427px;
+}
+
+.cms-section.pos-1 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-2 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-3 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-4 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-5 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-6 .cms-block-container .col-12 .cms-element-text,
+.cms-section.pos-7 .cms-block-container .col-12 .cms-element-text {
+
+    max-width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+
+    .cms-section.pos-1 .cms-block-container .col-12 .cms-element-text,
+    .cms-section.pos-2 .cms-block-container .col-12 .cms-element-text,
+    .cms-section.pos-3 .cms-block-container .col-12 .cms-element-text,
+    .cms-section.pos-4 .cms-block-container .col-12 .cms-element-text,
+    .cms-section.pos-5 .cms-block-container .col-12 .cms-element-text, 
+    .cms-section.pos-6 .cms-block-container .col-12 .cms-element-text {
+        padding-right: 220px;
+    }
+
+
+}

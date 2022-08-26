@@ -71,9 +71,18 @@
       font-size: 12px;
       line-height: 15px;
       color: black;
-      backdrop-filter: blur(40px) brightness(90%);
       padding: 10px 0;
       width: 205px;
+
+      background-color: rgba(219,216,209,0.5);
+      backdrop-filter: blur(40px) brightness(90%);
+      -webkit-backdrop-filter: blur(40px) brightness(90%);
+      border: none;
+
+
     }
   }
 }
+
+
+
