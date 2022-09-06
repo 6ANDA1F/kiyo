@@ -20,6 +20,24 @@
   text-transform: uppercase;
 }
 
+.btn.btn-outline-primary.header-minimal-back-to-shop-button {
+  font-family: 'SuisseIntlMono-Regular';
+  background-color: white;
+  min-width: 200px;
+  padding: 12px 22px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.btn.btn-outline-primary.header-minimal-back-to-shop-button:hover {
+  background-color: black;
+  color: white;
+}
+
 .btn.btn-primary:hover,
 .address-editor-select:not(.collapsed):hover,
 .address-editor-edit:not(.collapsed):hover,
