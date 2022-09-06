@@ -79,25 +79,26 @@
 .btn {
   &.btn-buy {
     font-family: 'SuisseIntlMono-Regular';
-    background-color: #EDEDED;
+    background-color: #000000;
     min-width: 200px;
     padding: 12px 22px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    border: 1px solid #EDEDED;
+    border: 1px solid #000000;
     border-radius: 3px;
     text-transform: uppercase;
+    color: #FFFFFF;
   }
 
 }
 
 .btn:hover {
   &.btn-buy {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #EDEDED;
+    border: 1px solid #EDEDED;
   }
 
 }
