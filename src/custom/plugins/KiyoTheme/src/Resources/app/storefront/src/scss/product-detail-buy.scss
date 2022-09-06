@@ -1,0 +1,35 @@
+.product-detail-delivery-information {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+    
+.product-delivery-information p {
+    margin-bottom: 0;
+}
+
+.product-detail-price {
+    font-family: "SuisseIntl-SemiBold";
+}
+
+.product-detail-tax-link { 
+    text-transform: none;
+    font-family: "SuisseIntl-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 22px;
+}
+
+@media (min-width: 768px) {
+
+    .cms-block-gallery-buybox .product-detail-buy .product-detail-configurator-option-input+.product-detail-configurator-option-label {
+        min-width: 55px;
+        height: 30px;
+    }
+
+    .product-detail-buy .cms-element-buy-box {
+        padding-left: 10px;
+    }
+
+}

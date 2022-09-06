@@ -21,6 +21,8 @@
     "app/storefront/src/scss/block-product-three-collumn.scss",
     "app/storefront/src/scss/cms-element-text.scss",
     "app/storefront/src/scss/cms-block-center-text.scss",
+    "app/storefront/src/scss/account.scss",
+    "app/storefront/src/scss/product-detail-buy.scss",
     "app/storefront/src/scss/cms-block-gallery-buybox.scss"
   ],
   "script": [

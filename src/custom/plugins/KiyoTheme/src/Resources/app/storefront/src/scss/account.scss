@@ -1,0 +1,95 @@
+
+body.is-act-loginpage main {
+    padding-top: 74px;
+}
+
+body.is-act-cartpage .checkout {
+    padding-top: 74px;
+}
+
+.card.register-card {
+    padding-top: 54px;
+}
+
+body.is-act-recoveraccountform .account-recover-password {
+    justify-content: left;
+    padding-top: 74px;
+}
+
+body.is-ctl-checkout.is-act-confirmpage h1.confirm-main-header {
+    font-family: "SuisseIntl-Medium" !important;
+}
+
+body.is-ctl-checkout.is-act-confirmpage .header-minimal-contact {
+    display: none !important;
+}
+
+.revocation-notice a {
+    text-transform: none !important;
+    font-family: "SuisseIntl-Regular" !important;
+}
+
+
+@media (min-width: 768px) { 
+
+    body.is-act-loginpage main {
+        padding-top: 154px;
+    }
+
+    body.is-act-cartpage .checkout {
+        padding-top: 0;
+    }
+    
+    .card.register-card {
+        padding-top: 0;
+        padding-right: 220px;
+    }
+
+    .card.login-card {
+        padding-right: 56px;
+    }
+
+    .login-advantages {
+        padding-top: 40px;
+    }
+
+
+
+    body.is-act-cartpage .checkout {
+        padding-top: 154px;
+        padding-right: 220px;
+    }
+
+    body.is-act-cartpage h1 {
+        font-family: "SuisseIntl-Medium";
+    }
+    
+    .checkout-main {
+        padding-right: 66px;
+    }
+
+
+    body.is-act-recoveraccountform .account-recover-password {
+        padding-top: 154px;
+        padding-right: 220px;
+    }
+
+
+
+
+
+    body.is-ctl-checkout.is-act-confirmpage .checkout-main {
+        margin-left: 0;
+        padding-right: 56px;
+    }
+
+    body.is-ctl-checkout.is-act-confirmpage .checkout-aside { 
+        margin-left: 0;
+
+    }
+
+}
+
+
+
+
