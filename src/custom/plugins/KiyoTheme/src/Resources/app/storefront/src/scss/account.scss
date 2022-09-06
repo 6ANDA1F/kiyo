@@ -29,6 +29,13 @@ body.is-ctl-checkout.is-act-confirmpage .header-minimal-contact {
     font-family: "SuisseIntl-Regular" !important;
 }
 
+.login-password-recover a,
+.data-protection-information a {
+    text-transform: none;
+    font-family: "SuisseIntl-Regular" !important;
+}
+
+
 
 @media (min-width: 768px) { 
 
@@ -51,6 +58,7 @@ body.is-ctl-checkout.is-act-confirmpage .header-minimal-contact {
 
     .login-advantages {
         padding-top: 40px;
+        display: none !important;
     }
 
 

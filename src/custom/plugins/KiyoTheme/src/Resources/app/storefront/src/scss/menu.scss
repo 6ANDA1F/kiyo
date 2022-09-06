@@ -81,6 +81,15 @@ div.navigation-offcanvas-headline {
   }
 }
 
+@media (max-width: 768px) {
+  .navigation-offcanvas-overlay-content {
+    padding-left: 7px;
+    padding-top: 20px;
+  }
+}
+
+
+
 //TODO need a breakpoint here?
 /* ---------- DESKTOP NAV STYLES ---------- */
 

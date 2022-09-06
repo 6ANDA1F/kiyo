@@ -1,0 +1,79 @@
+.offcanvas.cart-offcanvas {
+    background-color: white;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+.offcanvas.cart-offcanvas .header.container {
+    padding-top: 52px;
+}
+
+.offcanvas.cart-offcanvas .offcanvas-content-container {
+    padding: 40px 0;
+}
+
+.offcanvas.cart-offcanvas .offcanvas-cart-header div {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.offcanvas.cart-offcanvas  .offcanvas-cart-header {
+    text-transform: none !important;
+}
+
+.icon > svg {
+    top: 0 !important;
+}
+
+.alert-content {
+    text-transform: none !important;
+    font-family: 'SuisseIntl-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.offcanvas-cart-actions .btn.btn-block.btn-link {
+    text-transform: none;
+    color: black;
+    font-family: 'SuisseIntl-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.offcanvas-cart-header-count,
+.register-login-collapse-toogle a {
+    text-transform: none;
+    font-family: "SuisseIntl-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #000;
+}
+
+.header-minimal-contact {
+    display: none !important;
+}
+
+.checkout-container .address-main-header {
+    font-family: "SuisseIntl-Medium";
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.offcanvas-summary-list,
+.offcanvas-shipping-info,
+.offcanvas-cart-tax  {
+    text-transform: none !important;
+    font-family: "SuisseIntl-Regular" !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 22px;
+    color: #000;
+    padding-left: 0 !important;
+}
+
+.shipping-label.shipping-cost {
+    
+}
