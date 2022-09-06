@@ -4,6 +4,17 @@
   background-color: black;
 }
 
+.card-actions .btn.btn-light {
+    font-family: "SuisseIntlMono-Regular";
+    min-width: 200px;
+    padding: 12px 22px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
 .btn.btn-primary,
 .address-editor-select:not(.collapsed),
 .address-editor-edit:not(.collapsed),

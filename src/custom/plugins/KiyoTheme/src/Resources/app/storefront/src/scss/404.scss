@@ -1,0 +1,20 @@
+.is-ctl-.is-act- .content-main .container.mt-5 img {
+    display: none !important;
+}
+
+.is-ctl-.is-act- .content-main .container.mt-5 .text-center {
+    text-align: left !important;
+}
+
+
+@media (min-width: 768px) {  
+
+    .is-ctl-.is-act- .content-main .container.mt-5 {
+        margin-top: 140px !important;
+    }
+
+    .is-ctl-.is-act- .content-main .container.mt-5 {
+        padding-left: 8px;
+    }
+
+}

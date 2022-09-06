@@ -109,6 +109,42 @@
     margin: 0;
 }
 
+.tag-line svg.logo {
+    max-width: 48px;
+    margin-top: -5px;
+    padding-left: 4px;
+}
+
+.is-act-confirmpage input {
+    background-color: #e6e6e6 !important;
+    color: #000000 !important;
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.payment-method-description {
+    font-family: "SuisseIntl-SemiBold";
+    font-weight: normal;
+}
+
+.payment-method-description strong {
+    font-weight: 400;
+}
+
+
+
+.modal .cms-section-default.boxed {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.modal .cms-section-default.boxed {
+    padding-top: 0;
+}
+
+
+
 @media (min-width: 768px) { 
     .offcanvas.cart-offcanvas .header.container {
         padding-top: 52px;
@@ -164,5 +200,36 @@
     .is-act-cartpage .col-md-4.cart-add-product-container {
         padding-left: 6px;
     }
+
+
+
+    .is-act-confirmpage .col-sm-6.card-col.confirm-billing-address,
+    .is-act-confirmpage .confirm-payment-shipping .col-sm-6.confirm-payment {
+        padding-left: 0;
+    }
+
+    .confirm-address-billing {
+        padding-bottom: 20px;
+    }
+
+
+    .is-act-confirmpage .confirm-tos {
+        margin-bottom: 40px;
+    }
+
+    .confirm-tos .card.checkout-card .card-title {
+        margin-bottom: 6px;
+    }
+
+    .confirm-tos .card.checkout-card .revocation-notice {
+        margin-bottom: 5px;
+    }
+
+    .confirm-tos .card.checkout-card {
+        padding-top: 10px;
+    }
+
+
+
 
 }
