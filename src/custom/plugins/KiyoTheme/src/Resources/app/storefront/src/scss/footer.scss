@@ -18,15 +18,33 @@ footer.footer-main {
   .logos {
     img {
       width: 100%;
+      padding-top: 20px;
     }
     .logo:not(:last-of-type) {
-      padding-right: 20px;;
+      padding-right: 20px;
     }
   }
   background-color: #DBD8D180;
 }
 
+
+
+.logo-container {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.logo-container .payment-logo {
+  max-width: 65px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
 @media (min-width: 768px) {
+
+  .col-4.col-md-2.logo {
+    padding-left: 0;
+  }
 
   footer.footer-main {
     margin-top: 240px;
@@ -43,4 +61,17 @@ footer.footer-main {
       }
     }
   }
+
+  .logo-container {
+    padding-left: 22px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .logo-container .payment-logo {
+    max-width: 85px;
+    padding-right: 20px;
+  }
+
+
 }

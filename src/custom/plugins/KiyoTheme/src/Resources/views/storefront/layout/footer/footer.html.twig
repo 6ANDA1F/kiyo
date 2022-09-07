@@ -50,7 +50,7 @@
 {#                </div>#}
 {#            {% endblock %}#}
             <div class="col-md-6">
-                <h2>form</h2>
+{#            <h2>form</h2> #}
             </div>
             <div class="col-md-6">
                 <div class="row">
@@ -240,12 +240,19 @@
 {#                        <div class="col-4 col-md-2 logo">#}
 {#                            <img src="{{ asset('bundles/kiyotheme/assets/images/Bundesamt.png', 'asset') }}">#}
 {#                        </div>#}
-{#                        <div class="col-4 col-md-2 logo">#}
-{#                            <img src="{{ asset('bundles/kiyotheme/assets/images/Klimapakt.png', 'asset') }}">#}
-{#                        </div>#}
+                            <div class="col-8 col-md-2 logo">
+                                <img src="{{ asset('bundles/kiyotheme/assets/images/Klimapakt.png', 'asset') }}">
+                            </div>
 {#                        <div class="col-4 col-md-2 logo">#}
 {#                            <img src="{{ asset('bundles/kiyotheme/assets/images/Trusted.png', 'asset') }}">#}
 {#                        </div>#}
+
+                                                    
+                            <div class="col-12 offset-md-4 col-md-6 logo-container">
+                                <img class="payment-logo" src="{{ asset('bundles/kiyotheme/assets/images/apple-pay.png', 'asset') }}">
+                                <img class="payment-logo" src="{{ asset('bundles/kiyotheme/assets/images/pay-pal.png', 'asset') }}">
+                                <img class="payment-logo" src="{{ asset('bundles/kiyotheme/assets/images/mastercard.png', 'asset') }}">
+                            </div>
                     </div>
                 </div>
             {% endblock %}
