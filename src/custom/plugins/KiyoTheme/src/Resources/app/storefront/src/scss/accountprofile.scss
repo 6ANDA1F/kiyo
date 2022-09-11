@@ -1,31 +1,93 @@
 
+.is-ctl-accountprofile .content-main,
+.is-act-accountaddressoverview .content-main,
+.is-ctl-accountpayment .content-main,
+.is-ctl-accountorder .content-main,
+.is-act-subscriptionslist .content-main {
+    padding-top: 62px;
+}   
 
-.is-ctl-accountprofile .adress {
+
+.is-ctl-accountprofile .address {
     padding-bottom: 10px; 
 }
 
-.is-ctl-accountprofile .account-welcome h1 {
+.is-ctl-accountprofile .account-welcome h1,
+.is-act-accountaddressoverview .account-welcome h1,
+.is-ctl-accountpayment .account-welcome h1,
+.is-ctl-accountorder .account-welcome h1,
+.is-act-subscriptionslist .account-welcome h1 {
     font-family: "SuisseIntl-Medium";
 }
 
-.is-ctl-accountprofile .account-aside-btn .icon.icon-log-out {
+.is-ctl-accountprofile .account-aside-btn .icon.icon-log-out,
+.is-act-accountaddressoverview .account-aside-btn .icon.icon-log-out,
+.is-ctl-accountpayment .account-aside-btn .icon.icon-log-out,
+.is-ctl-accountorder .account-aside-btn .icon.icon-log-out,
+.is-act-subscriptionslist .icon.icon-log-out {
     display: none;
 }
 
+.account-aside-footer a {
+    font-family: "SuisseIntlMono-Regular";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+.account-content-main .address-card {
+    padding-left: 0;
+}
 
 @media (min-width: 768px) {
 
-    .is-ctl-accountprofile .content-main {
+    .is-ctl-accountprofile .content-main,
+    .is-act-accountaddressoverview .content-main,
+    .is-ctl-accountpayment .content-main,
+    .is-ctl-accountorder .content-main,
+    .is-act-subscriptionslist .content-main {
         padding-top: 147px;
+        padding-left: 50px;
+        padding-right: 220px;
     }   
-
 
     .is-ctl-accountprofile .account-overview-card.account-overview-profile,
     .is-ctl-accountprofile .account-overview-card.overview-billing-address {
         padding-left: 0;
     }
 
-    .is-ctl-accountprofile .account-content-main {
+    .is-ctl-accountprofile .account-content-main,
+    .is-act-accountaddressoverview .account-content-main,
+    .is-ctl-accountpayment .account-content-main,
+    .is-ctl-accountorder .account-content-main,
+    .is-act-subscriptionslist .account-content-main {
         margin-top: -15px;
     }
+}
+
+@media (min-width: 992px) {
+
+    .is-ctl-accountprofile .content-main,
+    .is-act-accountaddressoverview .content-main,
+    .is-ctl-accountpayment .content-main,
+    .is-ctl-accountorder .content-main,
+    .is-act-subscriptionslist .content-main {
+        padding-left: 0;
+    }   
+ }
+
+@media (min-width: 1200px) {
+
+    .is-ctl-accountprofile .content-main,
+    .is-act-accountaddressoverview .content-main,
+    .is-ctl-accountpayment .content-main,
+    .is-ctl-accountorder .content-main,
+    .is-act-subscriptionslist .content-main {
+        padding-left: 0;
+        padding-right: 0;
+    }   
+
+
 }

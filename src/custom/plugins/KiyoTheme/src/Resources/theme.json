@@ -7,26 +7,26 @@
      "@KiyoTheme"
   ],
   "style": [
-    "app/storefront/src/scss/overrides.scss",
+    "src/scss/overrides.scss",
     "@StorefrontBootstrap",
-    "app/storefront/src/scss/hidden-elements.scss",
-    "app/storefront/src/scss/fonts.scss",
-    "app/storefront/src/scss/text-formats.scss",
-    "app/storefront/src/scss/buttons.scss",
-    "app/storefront/src/scss/base.scss",
-    "app/storefront/src/scss/header.scss",
-    "app/storefront/src/scss/menu.scss",
-    "app/storefront/src/scss/footer.scss",
-    "app/storefront/src/scss/cms-block-text-on-image.scss",
-    "app/storefront/src/scss/block-product-three-collumn.scss",
-    "app/storefront/src/scss/cms-element-text.scss",
-    "app/storefront/src/scss/cms-block-center-text.scss",
-    "app/storefront/src/scss/account.scss",
-    "app/storefront/src/scss/product-detail-buy.scss",
-    "app/storefront/src/scss/cms-block-gallery-buybox.scss",
-    "app/storefront/src/scss/cart.scss",
-    "app/storefront/src/scss/404.scss",
-    "app/storefront/src/scss/accountprofile.scss"
+    "src/scss/hidden-elements.scss",
+    "src/scss/fonts.scss",
+    "src/scss/text-formats.scss",
+    "src/scss/buttons.scss",
+    "src/scss/base.scss",
+    "src/scss/header.scss",
+    "src/scss/menu.scss",
+    "src/scss/footer.scss",
+    "src/scss/cms-block-text-on-image.scss",
+    "src/scss/block-product-three-collumn.scss",
+    "src/scss/cms-element-text.scss",
+    "src/scss/cms-block-center-text.scss",
+    "src/scss/account.scss",
+    "src/scss/product-detail-buy.scss",
+    "src/scss/cms-block-gallery-buybox.scss",
+    "src/scss/cart.scss",
+    "src/scss/404.scss",
+    "src/scss/accountprofile.scss"
   ],
   "script": [
     "@Storefront",
@@ -34,6 +34,6 @@
   ],
   "asset": [
     "@Storefront",
-    "app/storefront/src/assets"
+    "src/assets"
   ]
 }
