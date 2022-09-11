@@ -25,7 +25,8 @@
     "app/storefront/src/scss/product-detail-buy.scss",
     "app/storefront/src/scss/cms-block-gallery-buybox.scss",
     "app/storefront/src/scss/cart.scss",
-    "app/storefront/src/scss/404.scss"
+    "app/storefront/src/scss/404.scss",
+    "app/storefront/src/scss/accountprofile.scss"
   ],
   "script": [
     "@Storefront",

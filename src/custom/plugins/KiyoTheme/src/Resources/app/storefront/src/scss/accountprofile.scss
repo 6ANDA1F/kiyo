@@ -1,0 +1,31 @@
+
+
+.is-ctl-accountprofile .adress {
+    padding-bottom: 10px; 
+}
+
+.is-ctl-accountprofile .account-welcome h1 {
+    font-family: "SuisseIntl-Medium";
+}
+
+.is-ctl-accountprofile .account-aside-btn .icon.icon-log-out {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .is-ctl-accountprofile .content-main {
+        padding-top: 147px;
+    }   
+
+
+    .is-ctl-accountprofile .account-overview-card.account-overview-profile,
+    .is-ctl-accountprofile .account-overview-card.overview-billing-address {
+        padding-left: 0;
+    }
+
+    .is-ctl-accountprofile .account-content-main {
+        margin-top: -15px;
+    }
+}
