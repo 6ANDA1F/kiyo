@@ -6,6 +6,11 @@
   }
   .header-logo-main {
     padding-right: 20px;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 

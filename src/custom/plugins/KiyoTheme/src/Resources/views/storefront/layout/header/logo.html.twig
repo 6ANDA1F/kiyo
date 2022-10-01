@@ -1,5 +1,7 @@
 {% sw_extends '@Storefront/storefront/layout/header/logo.html.twig' %}
 
 {% block layout_header_logo_link %}
-<h2 class="kiyo-logo">KIYO</h2>
+    <a href="{{ path('frontend.home.page') }}">
+        <h2 class="kiyo-logo">KIYO</h2>
+    </a>
 {% endblock %}
