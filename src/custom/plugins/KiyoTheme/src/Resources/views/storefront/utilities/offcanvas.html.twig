@@ -25,7 +25,7 @@ This template will be adjusted to use Bootstraps OffCanvas markup.
                         <div class="menu-button-mobile">
                             <button class="btn offcanvas-close js-offcanvas-close sticky-top">
                                 {% block utilities_offcanvas_close_icon %}
-                                    {% sw_icon 'x' style { 'size': 'sm' } %}
+                                    <img class="" src="{{ asset('bundles/kiyotheme/assets/images/close.svg', 'asset') }}">
                                 {% endblock %}
                             </button>
                         </div>

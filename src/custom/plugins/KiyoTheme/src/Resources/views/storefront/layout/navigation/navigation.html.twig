@@ -19,7 +19,7 @@
                                                     data-offcanvas-menu="true"
                                                     aria-label="{{ "general.menuLink"|trans|striptags }}">
                                                 {% block layout_header_navigation_toggle_button_icon %}
-                                                    {% sw_icon 'stack' %}
+                                                    <img class="" src="{{ asset('bundles/kiyotheme/assets/images/burger.svg', 'asset') }}">
                                                 {% endblock %}
                                             </button>
                                         {% endblock %}
@@ -38,7 +38,7 @@
                             {% endblock %}
 
                             {% block layout_header_logo %}
-                                <div class="col-auto d-sm-none align-self-center">
+                                <div class="col-auto d-sm-none align-self-center main-logo">
                                     {% sw_include '@Storefront/storefront/layout/header/logo.html.twig' %}
                                 </div>
                             {% endblock %}
