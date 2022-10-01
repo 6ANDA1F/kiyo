@@ -1,0 +1,40 @@
+{
+  "name": "kiyo/kiyo-cms-blocks",
+  "description": "Added cms blocks for Kiyo",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Owen Roberts"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Kiyo\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "Kiyo\\KiyoCmsBlocks",
+    "copyright": "Owen Roberts",
+    "label": {
+      "de-DE": "KiyoCmsBlocks",
+      "en-GB": "KiyoCmsBlocks"
+    },
+    "description": {
+      "de-DE": "Added cms blocks for Kiyo",
+      "en-GB": "Added cms blocks for Kiyo"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    },
+    "supportLink": {
+      "de-DE": "https://acme.org",
+      "en-GB": "https://acme.org"
+    }
+  }
+}
