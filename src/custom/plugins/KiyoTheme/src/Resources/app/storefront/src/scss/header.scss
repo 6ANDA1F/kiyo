@@ -6,6 +6,11 @@
   z-index: 1040;
 }
 
+.header-logo-main a:hover,
+.header-logo-main a:focus,
+.header-logo-main a:active {
+  text-decoration: none;
+}
 
 
 @media (min-width: 768px) { 
